@@ -1,12 +1,96 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
+    <title>Вязанные изделия от MISHKA</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
+  <body class="page__body">
+    <header class="header">
+      <img class="header__logo">
+      <button class="header__button"></button>
+    </header>
+    <main class="main">
+      <section class="preview">
+        <h1 class="preview__title">Милые штуки ручной работы для дома</h1>
+        <a class="preview__link">Предметы интерьера</a>
+        <a class="preview__link">Детские игрушки</a>
+      </section>
+      <section class="hit">
+        <h2 class="hit__title">Вязаные корзинки</h2>
+        <span class="hit__special">ТОВАР НЕДЕЛИ</span>
+        <p class="hit__text">Экологически чистая пряжа,
+          ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <dl class="hit__list">
+          <dt class="hit__property">Цвет</dt>
+          <dd class="hit__value">«Тиффани»/серый</dd>
+          <dt class="hit__property">Диаметр</dt>
+          <dd class="hit__value">25 см</dd>
+          <dt class="hit__property">Высота</dt>
+          <dd class="hit__value">15 см</dd>
+        </dl>
+        <img class="hit__image">
+        <span class="hit__price">Цена: 990 руб.</span>
+        <button class="hit__button button">ЗАКАЗАТЬ</button>
+      </section>
+      <section class="about">
+        <h2 class="about__title">Коротко о нас:</h2>
+        <ul class="about__list">
+          <li class="about__item">Экологически чистые материалы</li>
+          <li class="about__item">Скандинавский стиль по российской цене</li>
+          <li class="about__item">Увеличивает лайкина фотографиях</li>
+          <li class="about__item">Связано вручную с любовью и умилением</li>
+          <li class="about__item">Поддержка отечественного производителя</li>
+          <li class="about__item">Поставляется в подарочной упаковке</li>
+        </ul>
+      </section>
+      <section class="reviews">
+        <h2 class="reviews__title">Отзывы</h2>
+        <blockquote class="reviews__quote">
+          <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, каку популярных инстамамочек.В отчаянии, я накупила аксессуаров и игрушек в Мишке,и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <cite><b>Анастасия Красильникова</b>@misssssiskras</cite>
+        </blockquote>
+        <button class="reviews__button reviews__button--left">
+          <svg></svg>
+        </button>
+        <button class="reviews__button reviews__button--right">
+          <svg></svg>
+        </button>
+        <button class="reviews__button button">Написать</button>
+      </section>
+      <section class="contacts">
+        <h2 class="contacts__title">Контакты</h2>
+        <dl class="contacts__list">
+          <dt class="contacts__property">e-mail:</dt>
+          <dd class="contacts__value">
+            <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          </dd>
+          <dt class="contacts__property">адрес:</dt>
+          <dd class="contacts__value">
+            <address class="contacts__address">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</address>
+          </dd>
+        </dl>
+        <img class="contacts__map">
+        <button class="contacts__button button">Напишите нам</button>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="social">
+        <h2 class="social__title visually-hidden">Мы в социальных сетях!</h2>
+        <a class="social__link">
+          <svg class="instagram"></svg>
+        </a>
+        <a class="social__link">
+          <svg class="facebook"></svg>
+        </a>
+        <a class="social__link">
+          <svg class="twitter"></svg>
+        </a>
+      </section>
+      <section class="copyright">
+        <h2 class="copyright__title visually-hidden">Наш копирайт!</h2>
+        <span class="copyright__text">Разработано</span>
+        <svg class="copyright__image"></svg>
+      </section>
+    </footer>
   </body>
 </html>
