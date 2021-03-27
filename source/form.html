@@ -22,17 +22,25 @@
         <form class="application__form form" method="GET" action="https://echo.htmlacademy.ru">
           <fieldset class="application__group form-type">
             <legend class="form-type__title">ТИП</legend>
-            <input class="form-type__accessories" type="radio" name="accessories" checked>Аксессуар для интерьера<br>
-            <input class="form-type__baby-toy" type="radio" name="baby-toy">Детская игрушка
+            <input class="form-type__input-accessories" type="radio" name="accessories-and-toys" id="accessories-id" checked>
+            <label class="form-type__accessories-and-toys" for="accessories-id">Аксессуар для интерьера</label><br>
+            <input class="form-type__input-baby-toys" type="radio" name="accessories-and-toys" id="baby-toys-id">
+            <label class="form-type__accessories-and-toys" for="baby-toys-id">Детская игрушка</label>
           </fieldset>
           <fieldset class="application__group form-color">
             <legend class="form-color__title">ЦВЕТ</legend>
-            <input class="form-color__white" type="checkbox" name="white" checked>Белый<br>
-            <input class="form-color__dark" type="checkbox" name="dark" checked>Серый<br>
-            <input class="form-color__tiffani" type="checkbox" name="tiffani">«Тиффани»<br>
-            <input class="form-color__black" type="checkbox" name="black">Черный<br>
-            <input class="form-color__pink" type="checkbox" name="pink">Розовый<br>
-            <input class="form-color__orange" type="checkbox" name="orange">Оранжевый<br>
+            <input class="form-color__white" type="checkbox" name="white" id="white-id" checked>
+            <label class="form-color__label" for="white-id">Белый</label><br>
+            <input class="form-color__dark" type="checkbox" name="dark" id="dark-id" checked>
+            <label class="form-color__label" for="dark-id">Серый</label><br>
+            <input class="form-color__tiffani" type="checkbox" name="tiffani" id="tiffani-id">
+            <label class="form-color__label" for="tiffani-id">«Тиффани»</label><br>
+            <input class="form-color__black" type="checkbox" name="black" id="black-id">
+            <label class="form-color__label" for="black-id">Черный</label><br>
+            <input class="form-color__pink" type="checkbox" name="pink" id="pink-id">
+            <label class="form-color__label" for="pink-id">Розовый</label><br>
+            <input class="form-color__orange" type="checkbox" name="orange" id="orange-id">
+            <label class="form-color__label" for="orange-id">Оранжевый</label><br>
           </fieldset>
           <fieldset class="application__group form-fio">
             <legend class="form-fio__title">ФИО</legend>
