@@ -6,7 +6,9 @@
   </head>
   <body class="page__body">
     <header class="header">
-      <img class="header__logo" src="../source/img/logo.svg" width="86" height="35" alt="Логотип">
+      <a class="header__link" href="index.html">
+        <img class="header__logo" src="../source/img/logo.svg" width="86" height="35" alt="Логотип">
+      </a>
       <button class="header__button">
         <svg class="hamburger" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M20 0H0V2H20V0Z" fill="#231F20"/>
@@ -16,72 +18,58 @@
       </button>
     </header>
     <main class="main">
-      <section class="preview">
-        <h1 class="preview__title">Милые штуки ручной работы для дома</h1>
-        <a class="preview__link" href="#interior-items">Предметы интерьера</a>
-        <a class="preview__link" href="#baby-toys">Детские игрушки</a>
-      </section>
-      <section class="hit">
-        <h2 class="hit__title">Вязаные корзинки</h2>
-        <span class="hit__special">ТОВАР НЕДЕЛИ</span>
-        <p class="hit__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <dl class="hit__list">
-          <dt class="hit__property">Цвет</dt>
-          <dd class="hit__value">«Тиффани»/серый</dd>
-          <dt class="hit__property">Диаметр</dt>
-          <dd class="hit__value">25 см</dd>
-          <dt class="hit__property">Высота</dt>
-          <dd class="hit__value">15 см</dd>
-        </dl>
-        <img class="hit__image" src="../source/img/hit.png" width="260" height="315" alt="Вязанные корзинки">
-        <span class="hit__price">Цена: 990 руб.</span>
-        <button class="hit__button button">ЗАКАЗАТЬ</button>
-      </section>
-      <section class="about">
-        <h2 class="about__title">Коротко о нас:</h2>
-        <ul class="about__list">
-          <li class="about__item">Экологически чистые материалы</li>
-          <li class="about__item">Скандинавский стиль по российской цене</li>
-          <li class="about__item">Увеличивает лайкина фотографиях</li>
-          <li class="about__item">Связано вручную с любовью и умилением</li>
-          <li class="about__item">Поддержка отечественного производителя</li>
-          <li class="about__item">Поставляется в подарочной упаковке</li>
-        </ul>
-      </section>
-      <section class="reviews">
-        <h2 class="reviews__title">Отзывы</h2>
-        <blockquote class="reviews__quote">
-          <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, каку популярных инстамамочек.В отчаянии, я накупила аксессуаров и игрушек в Мишке,и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-          <cite><b>Анастасия Красильникова</b>@misssssiskras</cite>
-        </blockquote>
-        <button class="reviews__button">
-          <svg class="arrow-left" width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z" fill="black"/>
-          </svg>
-        </button>
-        <button class="reviews__button">
-          <svg class="arrow-right" width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 11H42.3L34.2 2.8L37 0L50 13L37 26L34.2 23.2L42.3 15H0V11Z" fill="black"/>
-          </svg>
-        </button>
-        <form class="reviews__form reviews-form" action="#add-review">
-          <input class="reviews-form__button button" type="submit" value="Написать">
+      <section class="application">
+        <h1 class="application__title">Вязание на заказ</h1>
+        <p class="application__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form class="application__form form" method="GET" action="https://echo.htmlacademy.ru">
+          <fieldset class="application__group form-type">
+            <legend class="form-type__title">ТИП</legend>
+            <input class="form-type__input-accessories" type="radio" name="accessories-and-toys" id="accessories-id" checked>
+            <label class="form-type__accessories-and-toys" for="accessories-id">Аксессуар для интерьера</label><br>
+            <input class="form-type__input-baby-toys" type="radio" name="accessories-and-toys" id="baby-toys-id">
+            <label class="form-type__accessories-and-toys" for="baby-toys-id">Детская игрушка</label>
+          </fieldset>
+          <fieldset class="application__group form-color">
+            <legend class="form-color__title">ЦВЕТ</legend>
+            <input class="form-color__white" type="checkbox" name="white" id="white-id" checked>
+            <label class="form-color__label" for="white-id">Белый</label><br>
+            <input class="form-color__dark" type="checkbox" name="dark" id="dark-id" checked>
+            <label class="form-color__label" for="dark-id">Серый</label><br>
+            <input class="form-color__tiffani" type="checkbox" name="tiffani" id="tiffani-id">
+            <label class="form-color__label" for="tiffani-id">«Тиффани»</label><br>
+            <input class="form-color__black" type="checkbox" name="black" id="black-id">
+            <label class="form-color__label" for="black-id">Черный</label><br>
+            <input class="form-color__pink" type="checkbox" name="pink" id="pink-id">
+            <label class="form-color__label" for="pink-id">Розовый</label><br>
+            <input class="form-color__orange" type="checkbox" name="orange" id="orange-id">
+            <label class="form-color__label" for="orange-id">Оранжевый</label><br>
+          </fieldset>
+          <fieldset class="application__group form-fio">
+            <legend class="form-fio__title">ФИО</legend>
+            <label class="form-fio__name" for="name-id">Имя:</label><br>
+            <input class="form-fio__input-name" type="text" name="name" id="name-id" placeholder="Введите ваше имя*" required><br>
+            <label class="form-fio__surname" for="surname-id">Фамилия:</label><br>
+            <input class="form-fio__input-surname" type="text" name="surname" id="surname-id" placeholder="Укажите фамилию*" required><br>
+            <label class="form-fio__patronymic" for="patronymic-id">Отчество:</label><br>
+            <input class="form-fio__input-patronymic" type="text" name="patronymic" id="patronymic-id" placeholder="Отчество, если желаете">
+          </fieldset>
+          <fieldset class="application__group form-phone">
+            <legend class="form-phone__title">ТЕЛ</legend>
+            <input class="form-phone__input-tel" type="tel" name="tel" id="tel-id" placeholder="+7 XXX XXX XX XX*" required>
+            <label class="visually-hidden" for="tel-id"></label>
+          </fieldset>
+          <fieldset class="application__group form-email">
+            <legend class="form-email__title">E-MAIL</legend>
+            <input class="form-email__input-email" type="email" name="email" id="email-id" placeholder="Ваш Email*" required>
+            <label class="visually-hidden" for="email-id"></label>
+          </fieldset>
+          <fieldset class="application__group form-dop">
+            <legend class="form-dop__title">ДОП</legend>
+            <textarea class="form-dop__textarea" name="textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </fieldset>
+          <span class="form-required">*Поля обязательны для заполнения</span><br>
+          <input class="form__input-button button" type="submit" value="ОТПРАВИТЬ ЗАКАЗ">
         </form>
-      </section>
-      <section class="contacts">
-        <h2 class="contacts__title">Контакты</h2>
-        <dl class="contacts__list">
-          <dt class="contacts__property">e-mail:</dt>
-          <dd class="contacts__value">
-            <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-          </dd>
-          <dt class="contacts__property">адрес:</dt>
-          <dd class="contacts__value">
-            <address class="contacts__address">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</address>
-          </dd>
-        </dl>
-        <img class="contacts__map" src="../source/img/map.png" width="320" height="454" alt="Карта">
-        <button class="contacts__button button">Напишите нам</button>
       </section>
     </main>
     <footer class="footer">
