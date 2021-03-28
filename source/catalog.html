@@ -6,7 +6,9 @@
   </head>
   <body class="page__body">
     <header class="header">
-      <img class="header__logo" src="../source/img/general/logo.svg" width="86" height="35" alt="Логотип">
+      <a class="header__link" href="index.html">
+        <img class="header__logo" src="../source/img/general/logo.svg" width="86" height="35" alt="Логотип">
+      </a>
       <button class="header__button">
         <svg class="hamburger" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M20 0H0V2H20V0Z" fill="#231F20"/>
@@ -16,73 +18,62 @@
       </button>
     </header>
     <main class="main">
-      <section class="preview">
-        <h1 class="preview__title">Милые штуки ручной работы для дома</h1>
-        <a class="preview__link" href="#interior-items">Предметы интерьера</a>
-        <a class="preview__link" href="#baby-toys">Детские игрушки</a>
-      </section>
-      <section class="hit">
-        <h2 class="hit__title">Вязаные корзинки</h2>
-        <span class="hit__special">ТОВАР НЕДЕЛИ</span>
-        <p class="hit__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <dl class="hit__list">
-          <dt class="hit__property">Цвет</dt>
-          <dd class="hit__value">«Тиффани»/серый</dd>
-          <dt class="hit__property">Диаметр</dt>
-          <dd class="hit__value">25 см</dd>
-          <dt class="hit__property">Высота</dt>
-          <dd class="hit__value">15 см</dd>
-        </dl>
-        <img class="hit__image" src="../source/img/index/hit.png" width="260" height="315" alt="Вязанные корзинки">
-        <span class="hit__price">Цена: 990 руб.</span>
-        <button class="hit__button button">ЗАКАЗАТЬ</button>
-      </section>
-      <section class="about">
-        <h2 class="about__title">Коротко о нас:</h2>
-        <ul class="about__list">
-          <li class="about__item">Экологически чистые материалы</li>
-          <li class="about__item">Скандинавский стиль по российской цене</li>
-          <li class="about__item">Увеличивает лайкина фотографиях</li>
-          <li class="about__item">Связано вручную с любовью и умилением</li>
-          <li class="about__item">Поддержка отечественного производителя</li>
-          <li class="about__item">Поставляется в подарочной упаковке</li>
+      <section class="catalog">
+        <h1 class="catalog__title">Каталог товаров</h1>
+        <ul class="catalog__list">
+          <li class="catalog__item catalog-item">
+            <img class="catalog-item__image" src="../source/img/catalog/hare.png" width="260" height="195" alt="Вязанный зайчик">
+            <h3 class="catalog-item__title">Зайчик-попрыгайчик</h3>
+            <p class="catalog-item__text">Рост 30 см, вес 200 г</p>
+            <div class="catalog-item__buy catalog-buy-container">
+              <span class="catalog-buy-container__price">1200 руб.</span>
+              <button class="catalog-buy-container__button button">
+                <svg class="catalog-buy-container__cart" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.2" d="M19.2271 7.23811H15.8454L12.5604 0.402108C12.3672 -9.09136e-06 11.9807 -0.100526 11.5942 0.100532C11.2077 0.301591 11.1111 0.703707 11.3043 1.10582L14.2995 7.23811H5.50723L8.50241 1.10582C8.69565 0.703707 8.50242 0.301591 8.21257 0.100532C7.82609 -0.100526 7.43962 0.10052 7.24638 0.402108L3.96133 7.23811H0.772936C0.386462 7.23811 0 7.53968 0 8.04233C0 8.44445 0.289844 8.84655 0.772936 8.84655H0.966184L1.83574 11.8624C1.64251 11.963 1.54587 12.164 1.54587 12.4656C1.54587 12.8677 1.83574 13.1693 2.22221 13.1693L3.86474 19H16.1353L17.7778 13.1693C18.1643 13.1693 18.4541 12.8677 18.4541 12.4656C18.4541 12.2645 18.3575 11.963 18.1643 11.8624L19.0338 8.84655H19.2271C19.6135 8.84655 20 8.54498 20 8.04233C20 7.53968 19.6135 7.23811 19.2271 7.23811ZM14.8792 17.3915H4.83092L3.67149 13.0688H16.1353L14.8792 17.3915ZM16.4251 11.5609H3.1884L2.41546 8.74605H17.1981L16.4251 11.5609Z" fill="black"/>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="catalog__item catalog-item">
+            <img class="catalog-item__image" src="../source/img/catalog/cart.png" width="260" height="195" alt="Вязанная корзинка для белья">
+            <h3 class="catalog-item__title">Корзинка для белья</h3>
+            <p class="catalog-item__text">Диаметр 15 см, высота 10 см</p>
+            <div class="catalog-item__buy catalog-buy-container">
+              <span class="catalog-buy-container__price">690 руб.</span>
+              <button class="catalog-buy-container__button button">
+                <svg class="catalog-buy-container__cart" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.2" d="M19.2271 7.23811H15.8454L12.5604 0.402108C12.3672 -9.09136e-06 11.9807 -0.100526 11.5942 0.100532C11.2077 0.301591 11.1111 0.703707 11.3043 1.10582L14.2995 7.23811H5.50723L8.50241 1.10582C8.69565 0.703707 8.50242 0.301591 8.21257 0.100532C7.82609 -0.100526 7.43962 0.10052 7.24638 0.402108L3.96133 7.23811H0.772936C0.386462 7.23811 0 7.53968 0 8.04233C0 8.44445 0.289844 8.84655 0.772936 8.84655H0.966184L1.83574 11.8624C1.64251 11.963 1.54587 12.164 1.54587 12.4656C1.54587 12.8677 1.83574 13.1693 2.22221 13.1693L3.86474 19H16.1353L17.7778 13.1693C18.1643 13.1693 18.4541 12.8677 18.4541 12.4656C18.4541 12.2645 18.3575 11.963 18.1643 11.8624L19.0338 8.84655H19.2271C19.6135 8.84655 20 8.54498 20 8.04233C20 7.53968 19.6135 7.23811 19.2271 7.23811ZM14.8792 17.3915H4.83092L3.67149 13.0688H16.1353L14.8792 17.3915ZM16.4251 11.5609H3.1884L2.41546 8.74605H17.1981L16.4251 11.5609Z" fill="black"/>
+                </svg>
+              </button>
+            </div>
+          </li>
+          <li class="catalog__item catalog-item">
+            <img class="catalog-item__image" src="../source/img/catalog/big-cart.png" width="260" height="195" alt="Большая вязанная корзинка для игрушек">
+            <h3 class="catalog-item__title">Большая корзинка для игрушек</h3>
+            <p class="catalog-item__text">Диаметр 30 см, высота 30 см</p>
+            <div class="catalog-item__buy catalog-buy-container">
+              <span class="catalog-buy-container__price">1500 руб.</span>
+              <button class="catalog-buy-container__button button">
+                <svg class="catalog-buy-container__cart" width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.2" d="M19.2271 7.23811H15.8454L12.5604 0.402108C12.3672 -9.09136e-06 11.9807 -0.100526 11.5942 0.100532C11.2077 0.301591 11.1111 0.703707 11.3043 1.10582L14.2995 7.23811H5.50723L8.50241 1.10582C8.69565 0.703707 8.50242 0.301591 8.21257 0.100532C7.82609 -0.100526 7.43962 0.10052 7.24638 0.402108L3.96133 7.23811H0.772936C0.386462 7.23811 0 7.53968 0 8.04233C0 8.44445 0.289844 8.84655 0.772936 8.84655H0.966184L1.83574 11.8624C1.64251 11.963 1.54587 12.164 1.54587 12.4656C1.54587 12.8677 1.83574 13.1693 2.22221 13.1693L3.86474 19H16.1353L17.7778 13.1693C18.1643 13.1693 18.4541 12.8677 18.4541 12.4656C18.4541 12.2645 18.3575 11.963 18.1643 11.8624L19.0338 8.84655H19.2271C19.6135 8.84655 20 8.54498 20 8.04233C20 7.53968 19.6135 7.23811 19.2271 7.23811ZM14.8792 17.3915H4.83092L3.67149 13.0688H16.1353L14.8792 17.3915ZM16.4251 11.5609H3.1884L2.41546 8.74605H17.1981L16.4251 11.5609Z" fill="black"/>
+                </svg>
+              </button>
+            </div>
+          </li>
         </ul>
       </section>
-      <section class="reviews">
-        <h2 class="reviews__title">Отзывы</h2>
-        <blockquote class="reviews__quote">
-          <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, каку популярных инстамамочек.В отчаянии, я накупила аксессуаров и игрушек в Мишке,и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-          <cite><b>Анастасия Красильникова</b>@misssssiskras</cite>
-        </blockquote>
-        <button class="reviews__button">
-          <svg class="arrow-left" width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z" fill="black"/>
+      <article class="process">
+        <h3 class="process__title">Процесс<br>производства</h3>
+        <div class="process__preview">
+          <svg class="process__preview-play" width="101" height="77" viewBox="0 0 101 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M97.0001 18.1C97.0001 18.1 96.1001 11.1 93.2001 7.99997C89.6001 3.99997 85.5001 3.89995 83.7001 3.69995C70.4001 2.69995 50.4001 2.69995 50.4001 2.69995H50.3001C50.3001 2.69995 30.3001 2.69995 17.0001 3.69995C15.1001 3.89995 11.1001 3.99997 7.50011 7.99997C4.70011 11.1 3.7001 18.1 3.7001 18.1C3.7001 18.1 2.80011 26.3 2.80011 34.5V42.2C2.80011 50.4 3.7001 58.6 3.7001 58.6C3.7001 58.6 4.60011 65.6 7.50011 68.7C11.1001 72.7 15.9001 72.6 18.0001 73C25.6001 73.8 50.4001 74 50.4001 74C50.4001 74 70.4001 74 83.7001 73C85.6001 72.8 89.6001 72.7 93.2001 68.7C96.0001 65.6 97.0001 58.6 97.0001 58.6C97.0001 58.6 97.9001 50.4 97.9001 42.2V34.5C97.9001 26.3 97.0001 18.1 97.0001 18.1Z" fill="#63D1BB"/>
+            <path d="M50.3001 76.8C49.3001 76.8 25.3001 76.5 17.7001 75.8H17.6001H17.5001C17.2001 75.7 16.8001 75.7 16.4001 75.6C13.9001 75.3 9.2001 74.7 5.6001 70.6C2.2001 67 1.2001 59.8 1.1001 59C1.1001 58.7 0.100098 50.5 0.100098 42.3V34.6C0.100098 26.3 1.00011 18.2 1.00011 17.9V17.8C1.10011 17 2.20011 9.89998 5.50011 6.19998C9.50011 1.79998 14.0001 1.30001 16.2001 1.10001C16.4001 1.10001 16.6001 1.1 16.7001 1H16.8001C30.1001 0 50.1001 0 50.3001 0H50.4001C50.6001 0 70.6001 0 83.9001 1H84.0001C84.2001 1 84.3001 1.00001 84.5001 1.10001C86.7001 1.30001 91.2001 1.79998 95.2001 6.19998C98.6001 9.79998 99.6001 17 99.7001 17.8C99.7001 18.1 100.7 26.3 100.7 34.6V42.3C100.7 50.6 99.8001 58.7 99.7001 59V59.1C99.6001 59.9 98.5001 67.1 95.2001 70.7C91.2001 75.1 86.7001 75.6 84.5001 75.8C84.3001 75.8 84.1001 75.8 84.0001 75.9H83.9001C70.6001 76.8 50.5001 76.8 50.3001 76.8ZM18.4001 70.4C25.9001 71.1 49.6001 71.4 50.4001 71.4C51.1001 71.4 70.5001 71.4 83.4001 70.4C83.6001 70.4 83.8001 70.4 84.0001 70.3C85.8001 70.1 88.6001 69.8 91.2001 67C93.0001 65 94.1001 60.1 94.3001 58.4C94.4001 57.9 95.2001 50 95.2001 42.3V34.6C95.2001 26.8 94.3001 19 94.2001 18.5C93.9001 16.1 92.8001 11.7 91.1001 10C88.5001 7.1 85.7001 6.89998 83.9001 6.69998C83.7001 6.69998 83.5001 6.70001 83.3001 6.60001C70.2001 5.60001 50.5001 5.60001 50.3001 5.60001H50.2001C50.0001 5.60001 30.2001 5.60001 17.2001 6.60001C17.0001 6.60001 16.8001 6.59998 16.6001 6.69998C14.8001 6.89998 12.0001 7.2 9.40012 10C7.60012 12 6.50011 16.9 6.30011 18.6C6.20011 19.2 5.4001 27 5.4001 34.7V42.4C5.4001 50.1 6.30011 58 6.30011 58.5C6.60011 60.9 7.70012 65.3 9.40012 67C11.7001 69.6 14.7001 70 16.9001 70.3C17.5001 70.2 17.9001 70.3 18.4001 70.4Z" fill="white"/>
+            <path d="M38.4004 20.5V56.2L68.2004 38.4L38.4004 20.5Z" fill="white"/>
           </svg>
-        </button>
-        <button class="reviews__button">
-          <svg class="arrow-right" width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 11H42.3L34.2 2.8L37 0L50 13L37 26L34.2 23.2L42.3 15H0V11Z" fill="black"/>
-          </svg>
-        </button>
-        <form class="reviews__form reviews-form" action="#add-review">
-          <input class="reviews-form__button button" type="submit" value="Написать">
-        </form>
-      </section>
-      <section class="contacts">
-        <h2 class="contacts__title">Контакты</h2>
-        <dl class="contacts__list">
-          <dt class="contacts__property">e-mail:</dt>
-          <dd class="contacts__value">
-            <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-          </dd>
-          <dt class="contacts__property">адрес:</dt>
-          <dd class="contacts__value">
-            <address class="contacts__address">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</address>
-          </dd>
-        </dl>
-        <img class="contacts__map" src="../source/img/index/map.png" width="320" height="454" alt="Карта">
-        <button class="contacts__button button">Напишите нам</button>
-      </section>
+        </div>
+        <p class="process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <button class="process__button">Сделать заказ</button>
+      </article>
     </main>
     <footer class="footer">
       <section class="social">
