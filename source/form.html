@@ -24,17 +24,25 @@
         <form class="application__form form" method="GET" action="https://echo.htmlacademy.ru">
           <fieldset class="application__group form-type">
             <legend class="form-type__title">ТИП</legend>
-            <input class="form-type__accessories" type="radio" name="accessories" checked>Аксессуар для интерьера<br>
-            <input class="form-type__baby-toy" type="radio" name="baby-toy">Детская игрушка
+            <input class="form-type__input-accessories" type="radio" name="accessories-and-toys" id="accessories-id" checked>
+            <label class="form-type__accessories-and-toys" for="accessories-id">Аксессуар для интерьера</label><br>
+            <input class="form-type__input-baby-toys" type="radio" name="accessories-and-toys" id="baby-toys-id">
+            <label class="form-type__accessories-and-toys" for="baby-toys-id">Детская игрушка</label>
           </fieldset>
           <fieldset class="application__group form-color">
             <legend class="form-color__title">ЦВЕТ</legend>
-            <input class="form-color__white" type="checkbox" name="white" checked>Белый<br>
-            <input class="form-color__dark" type="checkbox" name="dark" checked>Серый<br>
-            <input class="form-color__tiffani" type="checkbox" name="tiffani">«Тиффани»<br>
-            <input class="form-color__black" type="checkbox" name="black">Черный<br>
-            <input class="form-color__pink" type="checkbox" name="pink">Розовый<br>
-            <input class="form-color__orange" type="checkbox" name="orange">Оранжевый<br>
+            <input class="form-color__white" type="checkbox" name="white" id="white-id" checked>
+            <label class="form-color__label" for="white-id">Белый</label><br>
+            <input class="form-color__dark" type="checkbox" name="dark" id="dark-id" checked>
+            <label class="form-color__label" for="dark-id">Серый</label><br>
+            <input class="form-color__tiffani" type="checkbox" name="tiffani" id="tiffani-id">
+            <label class="form-color__label" for="tiffani-id">«Тиффани»</label><br>
+            <input class="form-color__black" type="checkbox" name="black" id="black-id">
+            <label class="form-color__label" for="black-id">Черный</label><br>
+            <input class="form-color__pink" type="checkbox" name="pink" id="pink-id">
+            <label class="form-color__label" for="pink-id">Розовый</label><br>
+            <input class="form-color__orange" type="checkbox" name="orange" id="orange-id">
+            <label class="form-color__label" for="orange-id">Оранжевый</label><br>
           </fieldset>
           <fieldset class="application__group form-fio">
             <legend class="form-fio__title">ФИО</legend>
@@ -47,11 +55,13 @@
           </fieldset>
           <fieldset class="application__group form-phone">
             <legend class="form-phone__title">ТЕЛ</legend>
-            <input class="form-phone__input-tel" type="tel" name="tel" placeholder="+7 XXX XXX XX XX*" required>
+            <input class="form-phone__input-tel" type="tel" name="tel" id="tel-id" placeholder="+7 XXX XXX XX XX*" required>
+            <label class="visually-hidden" for="tel-id"></label>
           </fieldset>
           <fieldset class="application__group form-email">
             <legend class="form-email__title">E-MAIL</legend>
-            <input class="form-email__input-email" type="email" name="email" placeholder="Ваш Email*" required>
+            <input class="form-email__input-email" type="email" name="email" id="email-id" placeholder="Ваш Email*" required>
+            <label class="visually-hidden" for="email-id"></label>
           </fieldset>
           <fieldset class="application__group form-dop">
             <legend class="form-dop__title">ДОП</legend>
@@ -84,9 +94,11 @@
       <section class="copyright">
         <h2 class="copyright__title visually-hidden">Наш копирайт!</h2>
         <span class="copyright__text">Разработано</span>
-        <svg class="copyright__image" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="copyright__image" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="#63D1BB"/>
-        </svg>
+          </svg>
+        </a>
       </section>
     </footer>
   </body>
