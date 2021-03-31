@@ -3,12 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Вязанные изделия от MISHKA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="header">
-      <a class="header__link" href="index.html">
-        <img class="header__logo" src="../source/img/general/logo.svg" width="86" height="35" alt="Логотип">
-      </a>
+      <div class="header__container-logo">
+        <a class="header__link" href="index.html">
+          <img class="header__logo" src="img/general/logo.svg" width="86" height="35" alt="Логотип">
+        </a>
+      </div>
       <button class="header__button">
         <svg class="hamburger" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M20 0H0V2H20V0Z" fill="#231F20"/>
@@ -19,57 +24,61 @@
     </header>
     <main class="main">
       <section class="application">
-        <h1 class="application__title">Вязание на заказ</h1>
-        <p class="application__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-        <form class="application__form form" method="GET" action="https://echo.htmlacademy.ru">
-          <fieldset class="application__group form-type">
-            <legend class="form-type__title">ТИП</legend>
-            <input class="form-type__input-accessories" type="radio" name="accessories-and-toys" id="accessories-id" checked>
-            <label class="form-type__accessories-and-toys" for="accessories-id">Аксессуар для интерьера</label><br>
-            <input class="form-type__input-baby-toys" type="radio" name="accessories-and-toys" id="baby-toys-id">
-            <label class="form-type__accessories-and-toys" for="baby-toys-id">Детская игрушка</label>
-          </fieldset>
-          <fieldset class="application__group form-color">
-            <legend class="form-color__title">ЦВЕТ</legend>
-            <input class="form-color__white" type="checkbox" name="white" id="white-id" checked>
-            <label class="form-color__label" for="white-id">Белый</label><br>
-            <input class="form-color__dark" type="checkbox" name="dark" id="dark-id" checked>
-            <label class="form-color__label" for="dark-id">Серый</label><br>
-            <input class="form-color__tiffani" type="checkbox" name="tiffani" id="tiffani-id">
-            <label class="form-color__label" for="tiffani-id">«Тиффани»</label><br>
-            <input class="form-color__black" type="checkbox" name="black" id="black-id">
-            <label class="form-color__label" for="black-id">Черный</label><br>
-            <input class="form-color__pink" type="checkbox" name="pink" id="pink-id">
-            <label class="form-color__label" for="pink-id">Розовый</label><br>
-            <input class="form-color__orange" type="checkbox" name="orange" id="orange-id">
-            <label class="form-color__label" for="orange-id">Оранжевый</label><br>
-          </fieldset>
-          <fieldset class="application__group form-fio">
-            <legend class="form-fio__title">ФИО</legend>
-            <label class="form-fio__name" for="name-id">Имя:</label><br>
-            <input class="form-fio__input-name" type="text" name="name" id="name-id" placeholder="Введите ваше имя*" required><br>
-            <label class="form-fio__surname" for="surname-id">Фамилия:</label><br>
-            <input class="form-fio__input-surname" type="text" name="surname" id="surname-id" placeholder="Укажите фамилию*" required><br>
-            <label class="form-fio__patronymic" for="patronymic-id">Отчество:</label><br>
-            <input class="form-fio__input-patronymic" type="text" name="patronymic" id="patronymic-id" placeholder="Отчество, если желаете">
-          </fieldset>
-          <fieldset class="application__group form-phone">
-            <legend class="form-phone__title">ТЕЛ</legend>
-            <input class="form-phone__input-tel" type="tel" name="tel" id="tel-id" placeholder="+7 XXX XXX XX XX*" required>
-            <label class="visually-hidden" for="tel-id"></label>
-          </fieldset>
-          <fieldset class="application__group form-email">
-            <legend class="form-email__title">E-MAIL</legend>
-            <input class="form-email__input-email" type="email" name="email" id="email-id" placeholder="Ваш Email*" required>
-            <label class="visually-hidden" for="email-id"></label>
-          </fieldset>
-          <fieldset class="application__group form-dop">
-            <legend class="form-dop__title">ДОП</legend>
-            <textarea class="form-dop__textarea" name="textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-          </fieldset>
-          <span class="form-required">*Поля обязательны для заполнения</span><br>
-          <input class="form__input-button button" type="submit" value="ОТПРАВИТЬ ЗАКАЗ">
-        </form>
+        <div class="application__container">
+          <h1 class="application__title">Вязание на заказ</h1>
+        </div>
+        <div class="application__wrapper">
+          <p class="application__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+          <form class="application__form form" method="GET" action="https://echo.htmlacademy.ru">
+            <fieldset class="application__group form-type">
+              <legend class="form-type__title">ТИП</legend>
+              <input class="form-type__input-accessories" type="radio" name="accessories-and-toys" id="accessories-id" checked>
+              <label class="form-type__accessories-and-toys" for="accessories-id">Аксессуар для интерьера</label><br>
+              <input class="form-type__input-baby-toys" type="radio" name="accessories-and-toys" id="baby-toys-id">
+              <label class="form-type__accessories-and-toys" for="baby-toys-id">Детская игрушка</label>
+            </fieldset>
+            <fieldset class="application__group form-color">
+              <legend class="form-color__title">ЦВЕТ</legend>
+              <input class="form-color__input form-color__white" type="checkbox" name="white" id="white-id" checked>
+              <label class="form-color__label" for="white-id">Белый</label><br>
+              <input class="form-color__input form-color__dark" type="checkbox" name="dark" id="dark-id" checked>
+              <label class="form-color__label" for="dark-id">Серый</label><br>
+              <input class="form-color__input form-color__tiffani" type="checkbox" name="tiffani" id="tiffani-id">
+              <label class="form-color__label" for="tiffani-id">«Тиффани»</label><br>
+              <input class="form-color__input form-color__black" type="checkbox" name="black" id="black-id">
+              <label class="form-color__label" for="black-id">Черный</label><br>
+              <input class="form-color__input form-color__pink" type="checkbox" name="pink" id="pink-id">
+              <label class="form-color__label" for="pink-id">Розовый</label><br>
+              <input class="form-color__input form-color__orange" type="checkbox" name="orange" id="orange-id">
+              <label class="form-color__label" for="orange-id">Оранжевый</label><br>
+            </fieldset>
+            <fieldset class="application__group form-fio">
+              <legend class="form-fio__title">ФИО</legend>
+              <label class="form-fio__name" for="name-id">Имя:</label><br>
+              <input class="form-fio__input-name" type="text" name="name" id="name-id" placeholder="Введите ваше имя*" required><br>
+              <label class="form-fio__surname" for="surname-id">Фамилия:</label><br>
+              <input class="form-fio__input-surname" type="text" name="surname" id="surname-id" placeholder="Укажите фамилию*" required><br>
+              <label class="form-fio__patronymic" for="patronymic-id">Отчество:</label><br>
+              <input class="form-fio__input-patronymic" type="text" name="patronymic" id="patronymic-id" placeholder="Отчество, если желаете">
+            </fieldset>
+            <fieldset class="application__group form-phone">
+              <legend class="form-phone__title">ТЕЛ</legend>
+              <input class="form-phone__input-tel" type="tel" name="tel" id="tel-id" placeholder="+7 XXX XXX XX XX*" required>
+              <label class="visually-hidden" for="tel-id"></label>
+            </fieldset>
+            <fieldset class="application__group form-email">
+              <legend class="form-email__title">E-MAIL</legend>
+              <input class="form-email__input-email" type="email" name="email" id="email-id" placeholder="Ваш Email*" required>
+              <label class="visually-hidden" for="email-id"></label>
+            </fieldset>
+            <fieldset class="application__group form-dop">
+              <legend class="form-dop__title">ДОП</legend>
+              <textarea class="form-dop__textarea" name="textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </fieldset>
+            <span class="form-required">*Поля обязательны для заполнения</span><br>
+            <input class="form__input-button button" type="submit" value="ОТПРАВИТЬ ЗАКАЗ">
+          </form>
+        </div>
       </section>
     </main>
     <footer class="footer">
