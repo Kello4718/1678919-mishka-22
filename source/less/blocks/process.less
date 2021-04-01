@@ -1,0 +1,63 @@
+.process {
+  padding: 15px 30px 58px;
+
+  &__title {
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+
+    position: relative;
+
+    color: @black;
+
+    padding: 21.5px 0 0 57px;
+    margin: 0 auto 26.5px 34px;
+  }
+
+  &__title::before {
+    content: "";
+
+    position: absolute;
+    top: 32.5px;
+    left: 0;
+
+    width: 32px;
+    height: 22px;
+
+    background-image: url("../img/catalog/video.svg");
+  }
+
+  &__preview {
+    width: 260px;
+    height: 150px;
+
+    background-image: url("../img/catalog/preview-of-video.png");
+
+    margin-bottom: 35px;
+  }
+
+  &__preview-play {
+    width: 100px;
+    height: 77px;
+
+    margin: 37px auto 0 80px;
+  }
+
+  &__text {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+
+    color: @grey;
+
+    padding-left: 34px;
+    margin: 0 0 41px;
+  }
+
+  &__button {
+    width: 192px;
+    height: 52px;
+
+    margin-left: 34px;
+  }
+}
