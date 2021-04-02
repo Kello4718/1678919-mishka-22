@@ -1,0 +1,50 @@
+.form-phone__title {
+  color: @coral;
+
+  position: relative;
+
+  padding: 0;
+  margin: 0 0 4.5px 0;
+}
+
+.form-phone__title::before {
+  content: "";
+
+  width: 200px;
+  height: 1px;
+
+  position: absolute;
+  top: 50%;
+  left: 60px;
+
+  background-color: @coral;
+}
+
+.form-phone__title::after {
+  content: "";
+
+  width: 25px;
+  height: 24px;
+
+  position: absolute;
+  top: 30px;
+  left: 229px;
+
+  background-image: url("../img/form/phone.svg");
+}
+
+.form-phone__input-tel {
+  width: 260px;
+
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+
+  border: none;
+  border-bottom: 2px solid @black;
+  outline: none;
+
+  padding: 14px 10px 20px 0;
+  margin-bottom: 34.5px;
+  box-sizing: border-box;
+}
