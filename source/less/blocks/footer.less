@@ -1,5 +1,36 @@
 .footer {
+  display: flex;
+  flex-flow: row wrap;
+
   background-color: @darkwhite;
 
-  padding: 25px 30px 23px 30px;
+  padding: 0 30px;
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 50px;
+  }
+}
+
+.footer__logo {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    width: 102px;
+    height: 34px;
+
+    display: inherit;
+  }
+}
+
+.footer__social {
+  width: 260px;
+  height: 80px;
+}
+
+.footer__copyright {
+  width: 260px;
+  height: 80px;
 }
