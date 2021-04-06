@@ -68,18 +68,50 @@
   }
 }
 
-.header__logo {
+.header__logo-mobile {
   width: 86px;
   height: 35px;
 
   @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.header__logo-tablet {
+  @media (min-width: @mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
     width: 113px;
     height: 46px;
+
+    display: inline-block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.header__logo-desktop {
+  @media (min-width: @mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 
   @media (min-width: @desktop-width) {
     width: 149px;
     height: 72px;
+
+    display: inline-block;
   }
 }
 
