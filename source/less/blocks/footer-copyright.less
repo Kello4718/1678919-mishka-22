@@ -1,0 +1,32 @@
+.footer-copyright {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: 178px;
+    height: 34px;
+
+    justify-content: flex-start;
+  }
+}
+
+.footer-copyright::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 260px;
+  height: 1px;
+
+  background-color: @bodycolor;
+}
+
+.footer-copyright__text {
+  margin-right: 27px;
+}
