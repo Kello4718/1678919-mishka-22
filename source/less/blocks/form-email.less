@@ -1,3 +1,33 @@
+.form-email {
+  width: 320px;
+
+  display: flex;
+  flex-flow: row wrap;
+
+  padding: 21px 30px 20px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 167px);
+    grid-template-areas: "title list list list";
+
+    background-color: @lightwhite;
+
+    padding: 65px 50px 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1150px;
+
+    display: grid;
+    grid-template-columns: repeat(6, 175px);
+    grid-template-areas: "title list list list list list";
+  }
+}
+
 .form-email__title {
   color: @coral;
 
@@ -5,6 +35,14 @@
 
   padding: 0;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    margin: auto 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: auto;
+  }
 }
 
 .form-email__title::before {
@@ -18,6 +56,10 @@
   left: 78px;
 
   background-color: @coral;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .form-email__title::after {
@@ -31,6 +73,15 @@
   left: 225px;
 
   background-image: url("../img/form/mail.svg");
+
+  @media (min-width: @tablet-width) {
+    top: -3px;
+    left: 617px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 780px;
+  }
 }
 
 .form-email__input-email {
@@ -47,4 +98,20 @@
   padding: 16px 76px 18px 0;
   margin-bottom: 34.5px;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 501px;
+    height: 52px;
+
+    background-color: transparent;
+
+    padding: 15px 278px 19px 18px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 700px;
+
+    padding: 15px 477px 19px 18px;
+  }
 }

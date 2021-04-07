@@ -1,3 +1,33 @@
+.form-type {
+  width: 320px;
+
+  display: flex;
+  flex-flow: row wrap;
+
+  padding: 14px 30px 22px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 167px);
+    grid-template-areas: "title list list list";
+
+    padding: 50px 50px 66.85px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1150px;
+
+    display: grid;
+    grid-template-columns: repeat(6, 175px);
+    grid-template-areas: "title list list list list list";
+
+    padding: 39.5px 50px 66.85px;
+  }
+}
+
 .form-type__title {
   color: @coral;
 
@@ -5,6 +35,19 @@
 
   padding: 0;
   margin: 0 0 35px 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    line-height: 16px;
+
+    grid-area: title;
+
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+  }
 }
 
 .form-type__title::before {
@@ -18,12 +61,130 @@
   left: 60px;
 
   background-color: @coral;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
-.form-type__input-accessories {
+.form-type__list {
+  .reset-list;
+
+  @media (min-width: @tablet-width) {
+    grid-area: list;
+  }
+}
+
+.form-type__item {
+  width: 260px;
+  height: 42px;
+
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+
+  display: flex;
+  align-items: center;
+
   margin-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 300px;
+
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 320px;
+
+    margin-bottom: 58px;
+  }
 }
 
-.form-type__input-baby-toys {
-  margin-bottom: 43px;
+.form-type__item:last-child {
+  margin-bottom: 0;
+}
+
+.form-type__accessories-and-toys {
+  position: relative;
+
+  display: block;
+
+  padding-left: 61px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 78px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 80px;
+  }
+}
+
+.form-type__accessories-and-toys::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 42px;
+  height: 42px;
+
+  background-image: url("../img/form/radio-not-checked-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: @tablet-width) {
+    top: -17px;
+    left: 0;
+
+    width: 52px;
+    height: 52px;
+
+    background-image: url("../img/form/radio-not-checked.svg");
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -17px;
+    left: 0;
+
+    width: 52px;
+    height: 52px;
+
+    background-image: url("../img/form/radio-not-checked.svg");
+  }
+}
+
+.form-type__input-accessories:checked + .form-type__accessories-and-toys::before,
+.form-type__input-baby-toys:checked + .form-type__accessories-and-toys::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 42px;
+  height: 42px;
+
+  background-image: url("../img/form/radio-checked-mobile.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    top: -17px;
+    left: 0;
+
+    width: 52px;
+    height: 52px;
+
+    background-image: url("../img/form/radio-checked.svg");
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -17px;
+    left: 0;
+
+    width: 52px;
+    height: 52px;
+
+    background-image: url("../img/form/radio-checked.svg");
+  }
 }

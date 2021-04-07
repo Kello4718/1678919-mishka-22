@@ -1,3 +1,33 @@
+.form-phone {
+  width: 320px;
+
+  display: flex;
+  flex-flow: row wrap;
+
+  padding: 16.5px 30px 20px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 167px);
+    grid-template-areas: "title list list list";
+
+    background-color: @lightwhite;
+
+    padding: 65px 50px 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1150px;
+
+    display: grid;
+    grid-template-columns: repeat(6, 175px);
+    grid-template-areas: "title list list list list list";
+  }
+}
+
 .form-phone__title {
   color: @coral;
 
@@ -5,6 +35,14 @@
 
   padding: 0;
   margin: 0 0 4.5px 0;
+
+  @media (min-width: @tablet-width) {
+    margin: auto 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: auto;
+  }
 }
 
 .form-phone__title::before {
@@ -18,6 +56,10 @@
   left: 60px;
 
   background-color: @coral;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .form-phone__title::after {
@@ -31,6 +73,15 @@
   left: 229px;
 
   background-image: url("../img/form/phone.svg");
+
+  @media (min-width: @tablet-width) {
+    top: -3px;
+    left: 617px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 770px;
+  }
 }
 
 .form-phone__input-tel {
@@ -47,4 +98,20 @@
   padding: 14px 10px 20px 0;
   margin-bottom: 34.5px;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 501px;
+    height: 52px;
+
+    background-color: transparent;
+
+    padding: 14px 220px 20px 17px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 700px;
+
+    padding: 14px 419px 20px 17px;
+  }
 }

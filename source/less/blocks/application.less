@@ -3,7 +3,45 @@
   width: 320px;
   height: 177px;
 
+  position: relative;
+
   background-color: @darkwhite;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    height: 226px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1150px;
+    height: 255px;
+  }
+}
+
+.application__container::before {
+  @media (min-width: @tablet-width) {
+    content: "";
+
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+
+    width: 770px;
+    height: 24px;
+
+    background-image: url("../img/general/zigzag-tablet-white.svg");
+  }
+
+  @media (min-width: @desktop-width) {
+
+    bottom: -17px;
+    left: 0;
+
+    width: 1150px;
+    height: 34px;
+
+    background-image: url("../img/general/zigzag-desktop-white.svg");
+  }
 }
 
 .application__title {
@@ -17,21 +55,48 @@
   padding-top: 73.5px;
   margin: 0;
   box-sizing: border-box;
-}
 
-.application__wrapper {
-  padding: 17px 30px 55px 30px;
-  box-sizing: border-box;
+  @media (min-width: @tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+
+    padding-top: 100px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+
+    padding-top: 101px;
+  }
 }
 
 .application__text {
+  width: 320px;
+
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
 
   color: @grey;
 
-  margin: 0 0 29px 0;
+  padding: 17px 30px 15px;
+  margin: 0;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    font-size: 17px;
+    line-height: 30px;
+
+    padding: 66px 50px 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1150px;
+
+    padding: 115.5px 225px 40px;
+  }
 }
 
 .application__form {
