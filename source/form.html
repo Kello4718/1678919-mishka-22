@@ -48,8 +48,10 @@
     </header>
     <main class="main">
       <section class="application">
-        <div class="application__container">
-          <h1 class="application__title">Вязание на заказ</h1>
+        <div class="application__wrapper">
+          <div class="application__container">
+            <h1 class="application__title">Вязание на заказ</h1>
+          </div>
         </div>
         <p class="application__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="application__form form" method="GET" action="https://echo.htmlacademy.ru">
@@ -66,34 +68,36 @@
               </li>
             </ul>
           </div>
-          <div class="application__group form-color">
-            <h3 class="form-color__title">ЦВЕТ</h3>
-            <ul class="form-color__list">
-              <li class="form-color__item">
-                <input class="form-color__input form-color__white visually-hidden" type="checkbox" name="white" id="white-id" checked>
-                <label class="form-color__label" for="white-id">Белый</label>
-              </li>
-              <li class="form-color__item">
-                <input class="form-color__input form-color__dark visually-hidden" type="checkbox" name="dark" id="dark-id" checked>
-                <label class="form-color__label" for="dark-id">Серый</label>
-              </li>
-              <li class="form-color__item">
-                <input class="form-color__input form-color__tiffani visually-hidden" type="checkbox" name="tiffani" id="tiffani-id">
-                <label class="form-color__label" for="tiffani-id">«Тиффани»</label>
-              </li>
-              <li class="form-color__item">
-                <input class="form-color__input form-color__black visually-hidden" type="checkbox" name="black" id="black-id">
-                <label class="form-color__label" for="black-id">Черный</label>
-              </li>
-              <li class="form-color__item">
-                <input class="form-color__input form-color__pink visually-hidden" type="checkbox" name="pink" id="pink-id">
-                <label class="form-color__label" for="pink-id">Розовый</label>
-              </li>
-              <li class="form-color__item">
-                <input class="form-color__input form-color__orange visually-hidden" type="checkbox" name="orange" id="orange-id">
-                <label class="form-color__label" for="orange-id">Оранжевый</label>
-              </li>
-            </ul>
+          <div class="application__wrapper">
+            <div class="application__group form-color">
+              <h3 class="form-color__title">ЦВЕТ</h3>
+              <ul class="form-color__list">
+                <li class="form-color__item">
+                  <input class="form-color__input form-color__white visually-hidden" type="checkbox" name="white" id="white-id" checked>
+                  <label class="form-color__label" for="white-id">Белый</label>
+                </li>
+                <li class="form-color__item">
+                  <input class="form-color__input form-color__dark visually-hidden" type="checkbox" name="dark" id="dark-id" checked>
+                  <label class="form-color__label" for="dark-id">Серый</label>
+                </li>
+                <li class="form-color__item">
+                  <input class="form-color__input form-color__tiffani visually-hidden" type="checkbox" name="tiffani" id="tiffani-id">
+                  <label class="form-color__label" for="tiffani-id">«Тиффани»</label>
+                </li>
+                <li class="form-color__item">
+                  <input class="form-color__input form-color__black visually-hidden" type="checkbox" name="black" id="black-id">
+                  <label class="form-color__label" for="black-id">Черный</label>
+                </li>
+                <li class="form-color__item">
+                  <input class="form-color__input form-color__pink visually-hidden" type="checkbox" name="pink" id="pink-id">
+                  <label class="form-color__label" for="pink-id">Розовый</label>
+                </li>
+                <li class="form-color__item">
+                  <input class="form-color__input form-color__orange visually-hidden" type="checkbox" name="orange" id="orange-id">
+                  <label class="form-color__label" for="orange-id">Оранжевый</label>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="application__group form-fio">
             <h3 class="form-fio__title">ФИО</h3>
@@ -112,15 +116,19 @@
               </li>
             </ul>
           </div>
-          <div class="application__group form-phone">
-            <h3 class="form-phone__title">ТЕЛ</h3>
-            <input class="form-phone__input-tel" type="tel" name="tel" id="tel-id" placeholder="+7 XXX XXX XX XX*" required>
-            <label class="visually-hidden" for="tel-id"></label>
+          <div class="application__wrapper">
+            <div class="application__group form-phone">
+              <h3 class="form-phone__title">ТЕЛ</h3>
+              <input class="form-phone__input-tel" type="tel" name="tel" id="tel-id" placeholder="+7 XXX XXX XX XX*" required>
+              <label class="visually-hidden" for="tel-id"></label>
+            </div>
           </div>
-          <div class="application__group form-email">
-            <h3 class="form-email__title">E-MAIL</h3>
-            <input class="form-email__input-email" type="email" name="email" id="email-id" placeholder="Ваш Email*" required>
-            <label class="visually-hidden" for="email-id"></label>
+          <div class="application__wrapper">
+            <div class="application__group form-email">
+              <h3 class="form-email__title">E-MAIL</h3>
+              <input class="form-email__input-email" type="email" name="email" id="email-id" placeholder="Ваш Email*" required>
+              <label class="visually-hidden" for="email-id"></label>
+            </div>
           </div>
           <div class="application__group form-dop">
             <h3 class="form-dop__title">ДОП</h3>
