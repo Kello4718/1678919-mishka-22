@@ -1,3 +1,32 @@
+.form-dop {
+  width: 320px;
+
+  display: flex;
+  flex-flow: row wrap;
+
+  padding: 16.5px 30px 55px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 167px);
+    grid-template-areas: "title textarea textarea textarea" "button button required required";
+
+    padding: 65px 50px 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1150px;
+
+    display: grid;
+    grid-template-columns: repeat(6, 175px);
+    grid-template-areas: "title textarea textarea textarea textarea ." ". button button required required .";
+  }
+}
+
 .form-dop__title {
   color: @coral;
 
@@ -5,6 +34,14 @@
 
   padding: 0;
   margin: 0 0 22.5px 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 18px 0 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 18px auto 0;
+  }
 }
 
 .form-dop__title::before {
@@ -18,6 +55,10 @@
   left: 60px;
 
   background-color: @coral;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .form-dop__textarea {
@@ -29,6 +70,63 @@
   color: @black;
 
   padding: 17px;
-  margin-bottom: 17px;
+  margin-bottom: 53px;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 501px;
+    min-height: 142px;
+
+    font-size: 19px;
+
+    grid-area: textarea;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 700px;
+  }
+}
+
+.form-dop__required {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+
+  color: @grey;
+
+  margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    text-align: right;
+
+    grid-area: required;
+
+    margin: auto 0;
+  }
+}
+
+.form-dop__input-button {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  text-align: center;
+
+  border: 2px solid @grey;
+
+  padding: 18px 37px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 230px;
+
+    grid-area: button;
+
+    padding: 18px 32px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 18px 17px;
+  }
 }
