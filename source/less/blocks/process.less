@@ -95,7 +95,7 @@
   }
 }
 
-.process__preview {
+.process__video {
   width: 260px;
   height: 150px;
 
@@ -121,11 +121,9 @@
   }
 }
 
-.process__preview-img-mobile {
+.process__video-mobile {
   width: 260px;
   height: 150px;
-
-  position: absolute;
 
   background-color: @grey;
 
@@ -134,7 +132,7 @@
   }
 }
 
-.process__preview-img-tablet {
+.process__video-tablet {
   display: none;
 
   @media (min-width: @tablet-width) {
@@ -143,8 +141,6 @@
 
     display: inline-block;
 
-    position: absolute;
-
     background-color: @grey;
   }
 
@@ -153,77 +149,62 @@
   }
 }
 
-.process__preview-img-desktop {
+.process__video-desktop {
   display: none;
 
   @media (min-width: @desktop-width) {
-    width: 682.5px;
+    width: 682px;
     height: 455px;
 
     display: inline-block;
 
-    position: absolute;
-
     background-color: @grey;
   }
 }
 
-.process__preview-play-mobile {
-  width: 100px;
-  height: 77px;
+.process__video-button {
+  width: 100.6px;
+  height: 76.8px;
 
   position: absolute;
   top: 37px;
-  left: 80px;
+  left: 80.1px;
+
+  border: none;
 
   z-index: 1;
 
+  padding: 0;
+
   @media (min-width: @tablet-width) {
-    display: none;
+    width: 102px;
+    height: 77.8px;
+
+    top: 189px;
+    left: 283px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100.7px;
+    height: 76.8px;
+
+    top: 190px;
+    left: 292.28px;
   }
 }
 
-.process__preview-play-tablet {
-  display: none;
+.process__video-play {
+  width: 100.6px;
+  height: 76.8px;
 
   @media (min-width: @tablet-width) {
     width: 102px;
     height: 78px;
-
-    position: absolute;
-
-    display: inline-block;
-
-    top: 189px;
-    left: 283px;
-
-    z-index: 1;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
-}
-
-.process__preview-play-desktop {
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    display: none;
   }
 
   @media (min-width: @desktop-width) {
     width: 101px;
     height: 77px;
-
-    position: absolute;
-
-    display: inline-block;
-
-    top: 190px;
-    left: 292px;
-
-    z-index: 1;
   }
 }
 
@@ -279,7 +260,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 230px;
+    width: 230.22px;
 
     padding: 18px 29px;
     margin: 0 auto 0 79px;
