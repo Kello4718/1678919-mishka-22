@@ -7,7 +7,7 @@
 
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 
   margin: 0 auto;
   box-sizing: border-box;
@@ -15,7 +15,10 @@
   @media (min-width: @tablet-width) {
     width: 768px;
     height: 89px;
+
     z-index: 1;
+
+    padding: 0 50px;
   }
 
   @media (min-width: @desktop-width) {
@@ -30,12 +33,15 @@
   flex-flow: row wrap;
   justify-content: space-between;
 
-  padding: 22px 31px;
+  padding: 22px 30px;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    width: 370px;
+    width: 320px;
+
     order: 1;
+
+    padding: 22px 31px 22px 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -45,7 +51,7 @@
     order: 2;
 
     padding: 0;
-    margin: 9px 0 7px;
+    margin: 9px auto 7px;
   }
 }
 
@@ -169,10 +175,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    display: flex;
+
     order: 1;
 
-    padding-left: 15px;
+    padding: 0;
   }
 }
 
@@ -195,7 +201,7 @@
 
     padding: 0;
     margin-top: 20.5px;
-    margin-right: 1px;
+    margin-right: 36px;
   }
 
   @media (min-width: @desktop-width) {
@@ -209,7 +215,7 @@
 
 .header__item:first-child {
   @media (min-width: @tablet-width) {
-    margin-left: 50px;
+    margin-left: 0;
   }
 }
 
@@ -266,8 +272,14 @@
   display: none;
 
   @media (min-width: @tablet-width) {
+    width: 348px;
+
     display: flex;
     order: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: auto;
   }
 }
 
@@ -328,14 +340,23 @@
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    width: 315px;
+    width: 233px;
     height: 89px;
 
     text-align: right;
 
+    box-shadow: none;
+
+    padding: 32.5px 0 31.5px 22px;
+    margin: 0 0 0 31px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 233px;
+
     box-shadow: 1px 0 0 @lightwhite, inset 1 0 0 @lightwhite;
 
-    padding: 32.5px 50px 31.5px 53px;
+    padding: 32.5px 0 31.5px 53px;
   }
 }
 
@@ -344,7 +365,7 @@
 
   position: absolute;
   top: 32px;
-  left: 32px;
+  left: 0;
 
   width: 21px;
   height: 18px;
