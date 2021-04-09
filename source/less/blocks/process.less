@@ -1,63 +1,268 @@
 .process {
+  width: 320px;
+
   padding: 15px 30px 58px;
+  margin: 0 auto;
+  box-sizing: border-box;
 
-  .process__title {
-    font-size: 17px;
-    line-height: 24px;
-    font-weight: 700;
+  @media (min-width: @tablet-width) {
+    width: 768px;
 
-    position: relative;
-
-    color: @black;
-
-    padding: 21.5px 0 0 57px;
-    margin: 0 auto 26.5px 34px;
+    padding: 23px 50px 64px;
   }
 
-  .process__title::before {
-    content: "";
+  @media (min-width: @desktop-width) {
+    width: 1150px;
 
-    position: absolute;
-    top: 32.5px;
-    left: 0;
+    padding: 27px 50px 105px;
+  }
+}
 
-    width: 32px;
-    height: 22px;
+.process__container {
+  width: 260px;
 
-    background-image: url("../img/catalog/video.svg");
+  display: flex;
+  flex-flow: column wrap;
+
+  border: 1px solid @lightwhite;
+
+  padding-bottom: 33px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 668px;
+
+    padding: 0 0 46px 0;
   }
 
-  .process__preview {
-    width: 260px;
-    height: 150px;
+  @media (min-width: @desktop-width) {
+    width: 1050px;
+    height: 455px;
 
-    background-image: url("../img/catalog/preview-of-video.png");
+    padding: 0;
+  }
+}
 
-    margin-bottom: 35px;
+.process__title {
+  width: 226px;
+
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+
+  position: relative;
+
+  color: @black;
+
+  padding: 21.5px 13px 0 57px;
+  margin: 0 auto 26.5px 34px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 336px;
+
+    font-size: 20px;
+
+    order: 2;
+
+    padding: 0 0 0 65px;
+    margin: 0 0 24.5px 42px;
   }
 
-  .process__preview-play {
-    width: 100px;
+  @media (min-width: @desktop-width) {
+    width: 178px;
+    height: max-content;
+
+    padding: 49px 0 0 0;
+    margin: 47px auto 27.5px 79px;
+  }
+}
+
+.process__title::before {
+  content: "";
+
+  position: absolute;
+  top: 32px;
+  left: 0;
+
+  width: 32px;
+  height: 22px;
+
+  background-image: url("../img/catalog/video.svg");
+
+  @media (min-width: @tablet-width) {
+    top: 0;
+  }
+}
+
+.process__video {
+  width: 260px;
+  height: 150px;
+
+  position: relative;
+
+  margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    width: 668px;
+    height: 455px;
+
+    order: 1;
+
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 682.5px;
+
+    order: 1;
+
+    margin: 0;
+  }
+}
+
+.process__video-mobile {
+  width: 260px;
+  height: 150px;
+
+  background-color: @grey;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.process__video-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    width: 668px;
+    height: 455px;
+
+    display: inline-block;
+
+    background-color: @grey;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.process__video-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    width: 682px;
+    height: 455px;
+
+    display: inline-block;
+
+    background-color: @grey;
+  }
+}
+
+.process__video-button {
+  width: 100.6px;
+  height: 76.8px;
+
+  position: absolute;
+  top: 37px;
+  left: 80.1px;
+
+  border: none;
+
+  z-index: 1;
+
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 102px;
+    height: 77.8px;
+
+    top: 189px;
+    left: 283px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100.7px;
+    height: 76.8px;
+
+    top: 190px;
+    left: 292.28px;
+  }
+}
+
+.process__video-play {
+  width: 100.6px;
+  height: 76.8px;
+
+  @media (min-width: @tablet-width) {
+    width: 102px;
+    height: 78px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 101px;
     height: 77px;
+  }
+}
 
-    margin: 37px auto 0 80px;
+.process__text {
+  width: 226px;
+
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: @grey;
+
+  margin: 0 0 41px auto;
+
+  @media (min-width: @tablet-width) {
+    width: 611px;
+
+    font-size: 15px;
+    line-height: 30px;
+
+    order: 3;
+
+    margin: 0 17px 40.5px 40px;
   }
 
-  .process__text {
-    font-size: 13px;
-    line-height: 24px;
-    font-weight: 400;
+  @media (min-width: @desktop-width) {
+    width: 252px;
 
-    color: @grey;
+    margin: 0 auto 51.5px 79px;
+  }
+}
 
-    padding-left: 34px;
-    margin: 0 0 41px;
+.process__button {
+  width: 192px;
+  height: 52px;
+
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+
+  padding: 18px 11px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 584px;
+
+    font-size: 17px;
+
+    order: 4;
+
+    padding: 18px 207px;
   }
 
-  .process__button {
-    width: 192px;
-    height: 52px;
+  @media (min-width: @desktop-width) {
+    width: 230.22px;
 
-    margin-left: 34px;
+    padding: 18px 29px;
+    margin: 0 auto 0 79px;
   }
 }

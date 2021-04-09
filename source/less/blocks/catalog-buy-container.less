@@ -1,7 +1,39 @@
 .catalog-buy-container {
-  padding: 22px 27px 26.5px 28px;
-  margin: 0;
+  width: 198px;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  position: relative;
+
+  padding: 23.5px 0 0 0;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 266px;
+    height: max-content;
+
+    margin-top: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 262px;
+  }
+}
+
+.catalog-buy-container::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 204px;
+  height: 1px;
+
+  background-color: @lightwhite;
 }
 
 .catalog-buy-container__price {
