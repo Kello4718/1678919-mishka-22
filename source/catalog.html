@@ -11,18 +11,23 @@
   <body class="page__body">
     <header class="header">
       <div class="header__wrapper">
-        <div class="header__wrapper-logo">
-          <a class="header__logo-link" href="index.html">
+        <div class="header__wrapper-logo-and-button">
+          <a class="header__logo-link" href="#index.html">
             <img class="header__logo-mobile" src="img/general/logo-mobile.svg" width="86" height="35" alt="Логотип">
             <img class="header__logo-tablet" src="img/general/logo-tablet.svg" width="113" height="46" alt="Логотип">
             <img class="header__logo-desktop" src="img/general/logo-desktop.svg" width="149" height="72" alt="Логотип">
           </a>
-          <button class="header__button">
-            <svg class="header__hamburger" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <button class="header__button-menu header__button-close">
+            <svg class="header__image-menu" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M20 0H0V2H20V0Z" fill="#231F20"/>
               <path d="M20 6H0V8H20V6Z" fill="#231F20"/>
               <path d="M20 12H0V14H20V12Z" fill="#231F20"/>
             </svg>
+          </button>
+          <button class="header__button-menu-close">
+            <svg class="header__image-menu-close" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21 1.36585L19.5659 0L10.5512 8.58537L1.43415 0L0 1.36585L9.01463 10.0488L0 18.6341L1.43415 20L10.5512 11.4146L19.5659 20L21 18.6341L11.9854 10.0488L21 1.36585Z" fill="black"/>
+              </svg>
           </button>
         </div>
         <ul class="header__list">
@@ -34,13 +39,19 @@
           </li>
         </ul>
         <ul class="header__user-list">
-          <li class="header__item-search"><span class="header__item-search-text">Поиск по сайту</span></li>
-          <li class="header__item-cart"><span class="header__item-cart-text">Корзина: пока пуста</span></li>
+          <li class="header__item-search">
+            <span class="header__item-search-text">Поиск по сайту</span>
+          </li>
+          <li class="header__item-cart">Корзина: пока пуста</li>
         </ul>
         <div class="header__container-dop header-container-dop">
           <ul class="header-container-dop__list">
-            <li class="header-container-dop__item"><a class="header-container-dop__link">Новые поступления</a></li>
-            <li class="header-container-dop__item"><a class="header-container-dop__link">Распродажа</a></li>
+            <li class="header-container-dop__item">
+              <a class="header-container-dop__link" href="#new-products">Новые поступления</a>
+            </li>
+            <li class="header-container-dop__item">
+              <a class="header-container-dop__link" href="#sale">Распродажа</a>
+            </li>
           </ul>
           <span class="header-container-dop__delivery">Бесплатная доставка по России</span>
         </div>

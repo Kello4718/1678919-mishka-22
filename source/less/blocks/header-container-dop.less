@@ -47,10 +47,24 @@
   text-align: left;
 
   margin-right: 45px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
-.header-container-dop__item:last-child {
-  margin-right: 0;
+.header-container-dop__link {
+  text-decoration: none;
+
+  color: @black;
+}
+
+.header-container-dop__link:hover {
+  color: fade(@black, 60%);
+}
+
+.header-container-dop__link:active {
+  color: fade(@black, 30%);
 }
 
 .header-container-dop__delivery {
