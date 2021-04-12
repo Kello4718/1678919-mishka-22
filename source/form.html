@@ -12,7 +12,7 @@
     <header class="header">
       <div class="header__wrapper">
         <div class="header__wrapper-logo-and-button">
-          <a class="header__logo-link" href="#index.html">
+          <a class="header__logo-link" href="index.html">
             <img class="header__logo-mobile" src="img/general/logo-mobile.svg" width="86" height="35" alt="Логотип">
             <img class="header__logo-tablet" src="img/general/logo-tablet.svg" width="113" height="46" alt="Логотип">
             <img class="header__logo-desktop" src="img/general/logo-desktop.svg" width="149" height="72" alt="Логотип">
@@ -130,15 +130,19 @@
           <div class="application__wrapper">
             <div class="application__group form-phone">
               <h3 class="form-phone__title">ТЕЛ</h3>
-              <input class="form-phone__input-tel" type="tel" name="tel" id="tel-id" placeholder="+7 XXX XXX XX XX*" required>
-              <label class="visually-hidden" for="tel-id"></label>
+              <span class="form-phone__item">
+                <input class="form-phone__input-tel" type="tel" name="tel" id="tel-id" placeholder="+7 XXX XXX XX XX*" required>
+                <label class="visually-hidden" for="tel-id"></label>
+              </span>
             </div>
           </div>
           <div class="application__wrapper">
             <div class="application__group form-email">
               <h3 class="form-email__title">E-MAIL</h3>
-              <input class="form-email__input-email" type="email" name="email" id="email-id" placeholder="Ваш Email*" required>
-              <label class="visually-hidden" for="email-id"></label>
+              <span class="form-email__item">
+                <input class="form-email__input-email" type="email" name="email" id="email-id" placeholder="Ваш Email*" required>
+                <label class="visually-hidden" for="email-id"></label>
+              </span>
             </div>
           </div>
           <div class="application__group form-dop">

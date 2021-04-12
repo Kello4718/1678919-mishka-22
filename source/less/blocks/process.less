@@ -43,6 +43,14 @@
   }
 }
 
+.process__container:hover {
+  box-shadow: 0 6px 10px fade(@black, 10%);
+}
+
+.process__container:active {
+  box-shadow: 0 3px 5px fade(@black, 10%);
+}
+
 .process__title {
   width: 226px;
 
@@ -206,6 +214,20 @@
     width: 101px;
     height: 77px;
   }
+}
+
+.process__video-button:hover {
+  transform: scale(1.2);
+  transition-duration: 1s;
+}
+
+.process__video-button:active {
+  transform: scale(0.8);
+  transition-duration: 1s;
+}
+
+.process__video-button:active path {
+  opacity: 60%;
 }
 
 .process__text {

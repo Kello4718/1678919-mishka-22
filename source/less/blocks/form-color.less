@@ -131,6 +131,22 @@
   }
 }
 
+.form-color__item:hover .form-color__label::before {
+  background-image: url("../img/form/checkbox-not-checked-hover.svg");
+}
+
+.form-color__item:active .form-color__label::before {
+  background-image: url("../img/form/checkbox-not-checked-active.svg");
+}
+
+.form-color__item:hover .form-color__input:checked + .form-color__label::before {
+  background-image: url("../img/form/checkbox-checked-hover.svg");
+}
+
+.form-color__item:active .form-color__input:checked + .form-color__label::before {
+  background-image: url("../img/form/checkbox-checked-active.svg");
+}
+
 .form-color__label {
   font-size: 17px;
   line-height: 18px;
