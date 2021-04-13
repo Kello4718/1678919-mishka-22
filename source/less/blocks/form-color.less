@@ -77,15 +77,11 @@
 
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
     width: 775px;
-
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
   }
 }
 
@@ -105,7 +101,7 @@
   @media (min-width: @desktop-width) {
     width: 249px;
 
-    margin: 0 14px 57px 0;
+    margin: 0; /*0 14px 57px 0;*/
   }
 }
 
@@ -115,11 +111,11 @@
   }
 }
 
-.form-color__item:nth-child(3n) {
+/*.form-color__item:nth-child(3n) {
   @media (min-width: @desktop-width) {
     margin: 0 0 57px 0;
   }
-}
+}*/
 
 .form-color__item:last-child {
   margin: 0;
@@ -132,19 +128,32 @@
 }
 
 .form-color__item:hover .form-color__label::before {
-  background-image: url("../img/form/checkbox-not-checked-hover.svg");
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/form/checkbox-not-checked-hover.svg");
+  }
 }
 
+
 .form-color__item:active .form-color__label::before {
-  background-image: url("../img/form/checkbox-not-checked-active.svg");
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/form/checkbox-not-checked-active.svg");
+  }
 }
 
 .form-color__item:hover .form-color__input:checked + .form-color__label::before {
-  background-image: url("../img/form/checkbox-checked-hover.svg");
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/form/checkbox-checked-hover.svg");
+  }
 }
 
 .form-color__item:active .form-color__input:checked + .form-color__label::before {
-  background-image: url("../img/form/checkbox-checked-active.svg");
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/form/checkbox-checked-active.svg");
+  }
+}
+
+.form-color__input:focus + .form-color__label::before {
+  box-shadow: 0 0 0 3px @grey;
 }
 
 .form-color__label {

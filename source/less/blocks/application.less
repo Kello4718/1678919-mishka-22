@@ -4,20 +4,22 @@
 
 .application__container {
   width: 320px;
-  height: 177px;
 
   position: relative;
-
+  padding: 73.5px 0;
   margin: 0 auto;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     width: 768px;
-    height: 226px;
+
+    padding: 100px 0 75px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1150px;
-    height: 255px;
+
+    padding: 101px 0 96px;
   }
 }
 
@@ -55,22 +57,17 @@
 
   color: @black;
 
-  padding-top: 73.5px;
   margin: 0;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     font-size: 43px;
     line-height: 50px;
-
-    padding-top: 100px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 53px;
     line-height: 57px;
-
-    padding-top: 101px;
   }
 }
 

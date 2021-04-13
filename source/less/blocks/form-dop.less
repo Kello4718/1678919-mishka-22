@@ -89,7 +89,9 @@
 
 .form-dop__textarea:hover,
 .form-dop__textarea:active {
-  border: 2px solid @lightcoral;
+  @media (min-width: @tablet-width) {
+    border: 2px solid @lightcoral;
+  }
 }
 
 .form-dop__required {

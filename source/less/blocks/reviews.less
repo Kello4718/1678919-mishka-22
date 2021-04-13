@@ -180,6 +180,20 @@
   }
 }
 
+.reviews__button:focus {
+  outline: none;
+}
+
+.reviews__button:focus .reviews__arrow-left,
+.reviews__button:focus .reviews__arrow-right {
+  outline: none;
+  box-shadow: 0 0 0 3px @coral;
+  border: 1px solid @coral;
+  border-radius: 5px;
+
+  padding: 5px;
+}
+
 .reviews__arrow-left:hover path,
 .reviews__arrow-right:hover path {
   fill: fade(@black, 60%);

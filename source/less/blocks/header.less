@@ -32,7 +32,7 @@
 
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   padding: 22px 0;
@@ -41,6 +41,7 @@
   @media (min-width: @tablet-width) {
     width: 320px;
 
+    justify-content: space-between;
     align-items: center;
     order: 1;
 
@@ -61,8 +62,6 @@
 .header__logo-link {
   width: 86px;
   height: 35px;
-
-  margin-left: 116px;
 
   @media (min-width: @tablet-width) {
     width: 113px;
@@ -137,7 +136,7 @@
   width: 21px;
   height: 20px;
 
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 
@@ -267,6 +266,15 @@
   color: fade(@black, 30%);
 }
 
+.header__link:focus {
+  box-shadow: 0 0 0 3px @coral;
+  outline: none;
+  border: 1px solid @lightcoral;
+  border-radius: 5px;
+
+  padding: 5px;
+}
+
 .header__user-list {
   .reset-list;
 
@@ -341,10 +349,31 @@
   background-image: url("../img/general/search-active.svg");
 }
 
-.header__item-search-text {
+.header__item-search-link {
+  text-decoration: none;
+
+  color: @black;
+
   @media (min-width: @tablet-width) {
     display: none;
   }
+}
+
+.header__item-search:hover .header__item-search-link {
+  color: fade(@black, 60%);
+}
+
+.header__item-search:active .header__item-search-link {
+  color: fade(@black, 30%);
+}
+
+.header__item-search-link:focus {
+  box-shadow: 0 0 0 3px @coral;
+  outline: none;
+  border: 1px solid @lightcoral;
+  border-radius: 5px;
+
+  padding: 5px;
 }
 
 .header__item-cart {
@@ -392,7 +421,7 @@
   }
 }
 
-.header__item-cart:hover {
+.header__item-cart:hover .header__item-cart-link {
   color: fade(@black, 60%);
 }
 
@@ -400,10 +429,25 @@
   background-image: url("../img/index/cart-hover.svg");
 }
 
-.header__item-cart:active {
+.header__item-cart:active .header__item-cart-link {
   color: fade(@black, 30%);
 }
 
 .header__item-cart:active::before {
   background-image: url("../img/index/cart-active.svg");
+}
+
+.header__item-cart-link:focus {
+  box-shadow: 0 0 0 3px @coral;
+  outline: none;
+  border: 1px solid @lightcoral;
+  border-radius: 5px;
+
+  padding: 5px;
+}
+
+.header__item-cart-link {
+  text-decoration: none;
+
+  color: @black;
 }

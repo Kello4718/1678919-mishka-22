@@ -139,14 +139,23 @@
   }
 }
 
-.preview__item:hover > .preview__link,
-.preview__item:active > .preview__link {
+.preview__item:hover .preview__link,
+.preview__item:active .preview__link {
   @media (min-width: @tablet-width) {
     height: 124px;
 
     padding: 24px 30px 36px 30px;
     transition: all 0.5s ease;
   }
+}
+
+.preview__link:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px @grey;
+  border: 1px solid @grey;
+  border-radius: 5px;
+
+  z-index: 1;
 }
 
 .preview__link {
