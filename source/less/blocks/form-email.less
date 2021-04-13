@@ -13,7 +13,7 @@
 
     display: grid;
     grid-template-columns: repeat(4, 167px);
-    grid-template-areas: "title list list list";
+    grid-template-areas: "title item item item";
 
     padding: 65px 50px 50px;
   }
@@ -23,7 +23,7 @@
 
     display: grid;
     grid-template-columns: repeat(6, 175px);
-    grid-template-areas: "title list list list list list";
+    grid-template-areas: "title item item item item item";
   }
 }
 
@@ -61,25 +61,42 @@
   }
 }
 
-.form-email__title::after {
+.form-email__item {
+  width: 260px;
+
+  grid-area: item;
+
+  position: relative;
+
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 501px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 700px;
+  }
+}
+
+.form-email__item::after {
   content: "";
 
   width: 32px;
   height: 21px;
 
   position: absolute;
-  top: 30px;
-  left: 225px;
+  top: 11px;
+  right: 7px;
 
   background-image: url("../img/form/mail.svg");
 
   @media (min-width: @tablet-width) {
-    top: -3px;
-    left: 617px;
+    right: 26px;
   }
 
   @media (min-width: @desktop-width) {
-    left: 780px;
+    right: 8px;
   }
 }
 

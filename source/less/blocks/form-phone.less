@@ -13,7 +13,7 @@
 
     display: grid;
     grid-template-columns: repeat(4, 167px);
-    grid-template-areas: "title list list list";
+    grid-template-areas: "title item item item";
 
     padding: 65px 50px 20px;
   }
@@ -23,7 +23,7 @@
 
     display: grid;
     grid-template-columns: repeat(6, 175px);
-    grid-template-areas: "title list list list list list";
+    grid-template-areas: "title item item item item .";
   }
 }
 
@@ -36,6 +36,8 @@
   margin: 0 0 4.5px 0;
 
   @media (min-width: @tablet-width) {
+    grid-area: title;
+
     margin: auto 0;
   }
 
@@ -61,26 +63,53 @@
   }
 }
 
-.form-phone__title::after {
+.form-phone__item {
+  width: 260px;
+
+  grid-area: item;
+
+  position: relative;
+
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 501px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 700px;
+  }
+}
+
+.form-phone__item::before {
   content: "";
 
   width: 25px;
   height: 24px;
 
   position: absolute;
-  top: 30px;
-  left: 229px;
+  top: 11px;
+  right: 7px;
 
   background-image: url("../img/form/phone.svg");
 
   @media (min-width: @tablet-width) {
-    top: -3px;
-    left: 617px;
+    right: 26px;
   }
 
   @media (min-width: @desktop-width) {
-    left: 770px;
+    right: 8px;
   }
+}
+
+.form-phone__item:hover .form-phone__input-tel,
+.form-phone__item:active .form-phone__input-tel {
+  border-bottom: 2px solid @lightcoral;
+}
+
+.form-phone__item:hover::before,
+.form-phone__item:active::before {
+  background-image: url("../img/form/phone-hover.svg");
 }
 
 .form-phone__input-tel {
@@ -89,6 +118,8 @@
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
+
+  position: relative;
 
   border: none;
   border-bottom: 2px solid @black;
