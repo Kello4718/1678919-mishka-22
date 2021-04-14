@@ -59,16 +59,25 @@
   color: @black;
 }
 
-.header-container-dop__link:hover {
+.header-container-dop__item:hover .header-container-dop__link {
   color: fade(@black, 60%);
 }
 
-.header-container-dop__link:active {
+.header-container-dop__item:active .header-container-dop__link {
   color: fade(@black, 30%);
 }
 
+.header-container-dop__link:focus {
+  box-shadow: 0 0 0 3px @coral;
+  outline: none;
+  border: 1px solid @lightcoral;
+  border-radius: 5px;
+
+  padding: 5px;
+}
+
 .header-container-dop__delivery {
-  font-weight: 700;
+  font-weight: 400;
 
   color: @grey;
 

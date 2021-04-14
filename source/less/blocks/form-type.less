@@ -107,21 +107,34 @@
 }
 
 .form-type__item:hover .form-type__accessories-and-toys::before {
-  background-image: url("../img/form/radio-not-checked-hover.svg");
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/form/radio-not-checked-hover.svg");
+  }
 }
 
 .form-type__item:active .form-type__accessories-and-toys::before {
-  background-image: url("../img/form/radio-not-checked-active.svg");
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/form/radio-not-checked-active.svg");
+  }
 }
 
 .form-type__item:hover .form-type__input-accessories:checked + .form-type__accessories-and-toys::before,
 .form-type__item:hover .form-type__input-baby-toys:checked + .form-type__accessories-and-toys::before {
-  background-image: url("../img/form/radio-checked-hover.svg");
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/form/radio-checked-hover.svg");
+  }
 }
 
 .form-type__item:active .form-type__input-accessories:checked + .form-type__accessories-and-toys::before,
 .form-type__item:active .form-type__input-baby-toys:checked + .form-type__accessories-and-toys::before {
-  background-image: url("../img/form/radio-checked-active.svg");
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/form/radio-checked-active.svg");
+  }
+}
+
+.form-type__input-accessories:focus + .form-type__accessories-and-toys::before,
+.form-type__input-baby-toys:focus + .form-type__accessories-and-toys::before {
+  box-shadow: 0 0 0 3px @grey;
 }
 
 .form-type__accessories-and-toys {

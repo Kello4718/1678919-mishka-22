@@ -104,12 +104,16 @@
 
 .form-phone__item:hover .form-phone__input-tel,
 .form-phone__item:active .form-phone__input-tel {
-  border-bottom: 2px solid @lightcoral;
+  @media (min-width: @tablet-width) {
+    border-bottom: 2px solid @lightcoral;
+  }
 }
 
 .form-phone__item:hover::before,
 .form-phone__item:active::before {
-  background-image: url("../img/form/phone-hover.svg");
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/form/phone-hover.svg");
+  }
 }
 
 .form-phone__input-tel {
