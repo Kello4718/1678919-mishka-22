@@ -26,13 +26,17 @@
 }
 
 .catalog-item:nth-child(2) .catalog-item__image-desktop {
-  width: 315px;
+  @media (min-width: @desktop-width) {
+    width: 315px;
 
-  background-color: transparent;
+    background-color: transparent;
+  }
 }
 
 .catalog-item:nth-child(2) .catalog-item__content-container {
-  width: 315px;
+  @media (min-width: @desktop-width) {
+    width: 315px;
+  }
 }
 
 .catalog-item:last-child {
@@ -67,9 +71,8 @@
 
   @media (min-width: @tablet-width) {
     width: 334px;
-    height: 334px;
 
-    display: inline-block;
+    display: block;
 
     background-color: @grey;
   }
