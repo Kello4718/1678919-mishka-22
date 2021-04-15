@@ -87,7 +87,11 @@
             <span class="hit__value">15 см</span>
           </li>
         </ul>
-        <img class="hit__image" src="img/index/hit.png" width="260" height="315" alt="Вязанные корзинки">
+        <picture class="hit__image-container">
+          <source media="(min-width: 1150px)" srcset="img/index/hit-desktop.png 1x, img/index/hit-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index/hit-tablet.png 1x, img/index/hit-tablet@2x.png 2x">
+          <img class="hit__image"src="img/index/hit-mobile.png" srcset="img/index/hit-mobile@2x.png 2x" alt="Вязанные корзинки">
+        </picture>
         <span class="hit__price">Цена: 990 руб.</span>
         <button class="hit__button button">ЗАКАЗАТЬ</button>
       </section>

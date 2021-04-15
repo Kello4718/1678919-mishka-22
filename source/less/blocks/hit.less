@@ -188,8 +188,14 @@
   margin: 0;
 }
 
+.hit__image-container {
+  height: auto;
+
+  grid-area: image;
+}
+
 .hit__image {
-  width: 260px;
+  width: 100%;
   height: 315px;
 
   background-color: @grey;
@@ -197,16 +203,15 @@
   margin: 0 0 25.5px 0;
 
   @media (min-width: @tablet-width) {
-    width: 334px;
-    height: 100%;
+    height: auto;
 
     grid-area: image;
 
     margin: 0;
   }
 
-  @media (min-width: @tablet-width) {
-    width: 100%;
+  @media (min-width: @desktop-width) {
+    /*width: 100%;*/
   }
 }
 

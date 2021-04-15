@@ -16,17 +16,27 @@
     display: flex;
     flex-flow: row wrap;
 
-    background: url("../img/index/review-background.png") no-repeat 0% 41px;
+    background: url("../img/index/review-background-tablet.png") no-repeat 0% 41px;
 
     padding: 41px 50px 85px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/review-background-tablet@2x.png");
+      background-size: 350px 457px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     width: 1150px;
 
-    background: url("../img/index/review-background.png") no-repeat 50px 41px;
+    background: url("../img/index/review-background-tablet.png") no-repeat 50px 41px;
 
     padding: 45px 50px 90px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/review-background-tablet@2x.png");
+      background-size: 350px 457px;
+    }
   }
 }
 
