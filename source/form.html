@@ -13,9 +13,11 @@
       <div class="header__wrapper">
         <div class="header__wrapper-logo-and-button">
           <a class="header__logo-link" href="index.html">
-            <img class="header__logo-mobile" src="img/general/logo-mobile.svg" width="86" height="35" alt="Логотип">
-            <img class="header__logo-tablet" src="img/general/logo-tablet.svg" width="113" height="46" alt="Логотип">
-            <img class="header__logo-desktop" src="img/general/logo-desktop.svg" width="149" height="72" alt="Логотип">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/general/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/general/logo-tablet.svg">
+              <img class="header__logo" src="img/general/logo-mobile.svg" width="86" height="35" alt="Логотип">
+            </picture>
           </a>
           <button class="header__button-menu header__button-close">
             <svg class="header__image-menu" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">

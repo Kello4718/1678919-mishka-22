@@ -76,59 +76,31 @@
   }
 }
 
-.header__logo-mobile {
+.header__logo {
   width: 86px;
   height: 35px;
 
   @media (min-width: @tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
-}
-
-.header__logo-tablet {
-  @media (min-width: @mobile-width) {
-    display: none;
-  }
-
-  @media (min-width: @tablet-width) {
     width: 113px;
     height: 46px;
-
-    display: inline-block;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
-}
-
-.header__logo-desktop {
-  @media (min-width: @mobile-width) {
-    display: none;
-  }
-
-  @media (min-width: @tablet-width) {
-    display: none;
   }
 
   @media (min-width: @desktop-width) {
     width: 149px;
     height: 72px;
-
-    display: inline-block;
   }
 }
 
-.header__logo-desktop:hover {
-  opacity: 60%;
+.header__logo:hover {
+  @media (min-width: @desktop-width) {
+    opacity: 60%;
+  }
 }
 
-.header__logo-desktop:active {
-  opacity: 30%;
+.header__logo:active {
+  @media (min-width: @desktop-width) {
+    opacity: 30%;
+  }
 }
 
 .header__button-menu,
