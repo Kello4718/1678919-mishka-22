@@ -65,6 +65,7 @@
 
 .catalog-item__content-container {
   width: 260px;
+  min-height: 179px;
 
   display: flex;
   flex-flow: row wrap;
@@ -77,12 +78,14 @@
 
   @media (min-width: @tablet-width) {
     width: 334px;
+    min-height: 334px;
 
     padding: 27px 32px 25.5px 34px;
   }
 
   @media (min-width: @desktop-width) {
     width: 316px;
+    min-height: 197px;
 
     padding: 27px 30px 25.5px 28px;
   }
@@ -96,7 +99,7 @@
   box-shadow: 0 3px 5px fade(@black, 10%);
 }
 
-.catalog-item__content-discription {
+.catalog-item__content-description {
   width: 198px;
 
   display: flex;
