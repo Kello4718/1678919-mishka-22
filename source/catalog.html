@@ -12,11 +12,13 @@
     <header class="header">
       <div class="header__wrapper">
         <div class="header__wrapper-logo-and-button">
-          <picture class="header__logo-picture">
-            <source media="(min-width: 1150px)" srcset="img/general/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/general/logo-tablet.svg">
-            <img class="header__logo-image" src="img/general/logo-mobile.svg" width="86" height="35" alt="Логотип">
-          </picture>
+          <a class="header__logo-link" href="index.html">
+            <picture class="header__logo-picture">
+              <source media="(min-width: 1150px)" srcset="img/general/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/general/logo-tablet.svg">
+              <img class="header__logo-image" src="img/general/logo-mobile.svg" width="86" height="35" alt="Логотип">
+            </picture>
+          </a>
           <button class="header__button-menu header__button-close">
             <svg class="header__image-menu" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M20 0H0V2H20V0Z" fill="#231F20"/>
@@ -70,13 +72,13 @@
           <li class="catalog__item catalog-item">
             <a class="catalog-item__link-image" href="#hare">
               <picture class="catalog-item__picture">
-                <img class="catalog-item__image" src="img/catalog/hare-mobile.png" width="260" height="195" alt="Вязанный зайчик">
-                <img class="catalog-item__image-tablet" src="img/catalog/hare-tablet.png" width="334" height="334" alt="Вязанный зайчик">
-                <img class="catalog-item__image-desktop" src="img/catalog/hare-desktop.png" width="316" height="462" alt="Вязанный зайчик">
+                <source media="(min-width: 1150px)" srcset="img/catalog/hare-desktop.png 1x, img/catalog/hare-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/hare-tablet.png 1x, img/catalog/hare-tablet@2x.png 2x">
+                <img class="catalog-item__image" src="img/catalog/hare-mobile.png" srcset="img/catalog/hare-mobile@2x.png 2x" width="260" height="195" alt="Вязанный зайчик">
               </picture>
             </a>
             <div class="catalog-item__content-container">
-              <div class="catalog-item__content-discription">
+              <div class="catalog-item__content-description">
                 <a class="catalog-item__link-title" href="#hare">
                   <h3 class="catalog-item__title">Зайчик-попрыгайчик</h3>
                 </a>
@@ -94,12 +96,14 @@
           </li>
           <li class="catalog__item catalog-item">
             <a class="catalog-item__link-image" href="#cart">
-              <img class="catalog-item__image-mobile" src="img/catalog/cart-mobile.png" width="260" height="195" alt="Вязанная корзинка для белья">
-              <img class="catalog-item__image-tablet" src="img/catalog/cart-tablet.png" width="334" height="334" alt="Вязанная корзинка для белья">
-              <img class="catalog-item__image-desktop" src="img/catalog/cart-desktop.png" width="316" height="462" alt="Вязанная корзинка для белья">
+              <picture class="catalog-item__picture">
+                <source media="(min-width: 1150px)" srcset="img/catalog/cart-desktop.png 1x, img/catalog/cart-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/cart-tablet.png 1x, img/catalog/cart-tablet@2x.png 2x">
+                <img class="catalog-item__image" src="img/catalog/cart-mobile.png" srcset="img/catalog/cart-mobile@2x.png 2x" width="260" height="195" alt="Вязанная корзинка ">
+              </picture>
             </a>
             <div class="catalog-item__content-container">
-              <div class="catalog-item__content-discription">
+              <div class="catalog-item__content-description">
                 <a class="catalog-item__link-title" href="#cart">
                   <h3 class="catalog-item__title">Корзинка для белья</h3>
                 </a>
@@ -117,16 +121,16 @@
           </li>
           <li class="catalog__item catalog-item">
             <a class="catalog-item__link-image" href="#big-cart">
-              <picture class="header__logo-picture">
-                <source media="(min-width: 1150px)" srcset="img/general/logo-desktop.svg">
-                <source media="(min-width: 768px)" srcset="img/general/logo-tablet.svg">
-                <img class="header__logo-image" src="img/general/logo-mobile.svg" width="86" height="35" alt="Логотип">
+              <picture class="catalog-item__picture">
+                <source media="(min-width: 1150px)" srcset="img/catalog/big-cart-desktop.png 1x, img/catalog/big-cart-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/catalog/big-cart-tablet.png 1x, img/catalog/big-cart-tablet@2x.png 2x">
+                <img class="catalog-item__image" src="img/catalog/big-cart-mobile.png" srcset="img/catalog/big-cart-mobile@2x.png 2x" width="260" height="195" alt="Большая корзинка с вязанными изделиями">
               </picture>
             </a>
             <div class="catalog-item__content-container">
-              <div class="catalog-item__content-discription">
+              <div class="catalog-item__content-description">
                 <a class="catalog-item__link-title" href="#big-cart">
-                  <h3 class="catalog-item__title">Большая корзинка для игрушек</h3>
+                  <h3 class="catalog-item__title">Большая корзинка<br> для игрушек</h3>
                 </a>
                 <p class="catalog-item__text">Диаметр 30 см, высота 30 см</p>
               </div>
