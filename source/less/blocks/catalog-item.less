@@ -15,7 +15,10 @@
   @media (min-width: @desktop-width) {
     width: 316px;
 
-    margin: 0 51px 0 0;
+    display: grid;
+    grid-template-rows: 462px 1fr;
+
+    margin: 0;
   }
 }
 
@@ -38,6 +41,8 @@
 
   @media (min-width: @desktop-width) {
     height: 462px;
+
+    grid-row: 1 / 2;
   }
 }
 
@@ -87,6 +92,9 @@
     width: 316px;
     min-height: 197px;
 
+    grid-row: 2 / 3;
+    flex-flow: column wrap;
+
     padding: 27px 30px 25.5px 28px;
   }
 }
@@ -117,6 +125,12 @@
     width: 262px;
 
     margin-bottom: 36.5px;
+  }
+}
+
+.catalog-item:nth-child(3) .catalog-item__content-description {
+  @media (min-width: @desktop-width) {
+    margin-bottom: 12.5px;
   }
 }
 
