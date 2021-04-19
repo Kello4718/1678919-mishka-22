@@ -2,7 +2,7 @@
   width: 320px;
 
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
 
   position: relative;
 
@@ -17,6 +17,8 @@
     display: grid;
     grid-template-columns: 167px 167px 167px 167px;
     grid-template-areas: "title title title special""text text image image""list list image image""price price image image""button button image image";
+
+    padding: 40px 50px 62px;
   }
 
   @media (min-width: @desktop-width) {
@@ -24,7 +26,7 @@
 
     grid-template-columns: 175px 175px 175px 175px 175px 175px;
     grid-template-areas: "special title title image image image"". text text image image image"". list list image image image"". price price image image image"". button button image image image";
-    padding: 54px 50px 96px;
+    padding: 54px 50px 86px;
   }
 }
 
@@ -65,7 +67,7 @@
   color: @black;
 
   padding: 0;
-  margin: 0 0 3.5px 0;
+  margin: 2px 0 3.5px 0;
 
   @media (min-width: @tablet-width) {
     font-size: 43px;
@@ -84,7 +86,7 @@
 
     z-index: 1;
 
-    margin: 61px 0 35px 0;
+    margin: 68px 0 32px 0;
   }
 }
 
@@ -108,13 +110,13 @@
 
     grid-area: special;
 
-    margin: 0;
+    margin: 7px 10px 0 0;
   }
 
   @media (min-width: @desktop-width) {
     justify-self: center;
 
-    margin-top: 68px;
+    margin: 76px 0 0 0;
   }
 }
 
@@ -125,7 +127,7 @@
 
   color: @grey;
 
-  margin: 0 0 28px 0;
+  margin: 0 0 20px 0;
 
   @media (min-width: @tablet-width) {
     width: 292px;
@@ -136,7 +138,11 @@
 
     grid-area: text;
 
-    margin-bottom: 48px;
+    margin: 0 0 37px 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 50px 0;
   }
 }
 
@@ -160,7 +166,11 @@
 
     grid-area: list;
 
-    margin-bottom: 57px;
+    margin: 0 0 57px 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 107px 0;
   }
 }
 
@@ -189,39 +199,34 @@
 }
 
 .hit__image-container {
-  height: 315px;
-
-  grid-area: image;
-
   @media (min-width: @tablet-width) {
-    height: 404px;
+    grid-area: image;
 
     margin-top: 13px;
   }
 
-  @media (min-width: @desktop-width) {
-    height: 636px;
-
-    margin-top: 0;
+  @media (min-width: @tablet-width) {
+    margin-top: 6px;
   }
 }
 
 .hit__image {
-  width: 100%;
+  width: 260px;
   height: 315px;
 
   background-color: @grey;
 
-  @media (min-width: @tablet-width) {
-    height: auto;
+  margin: 0 0 23px 0;
 
-    grid-area: image;
+  @media (min-width: @tablet-width) {
+    width: 334px;
+    height: 100%;
 
     margin: 0;
   }
 
   @media (min-width: @desktop-width) {
-    /*width: 100%;*/
+    width: 100%;
   }
 }
 
@@ -232,8 +237,7 @@
 
   color: @grey;
 
-  margin-top: 25.5px;
-  margin-bottom: 24.5px;
+  margin: 0 auto 23px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -241,13 +245,16 @@
     grid-area: price;
     justify-self: center;
 
-    margin-top: 0;
-    margin-bottom: 33px;
+    margin: 1px 40px 33px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 6px 55px 33px 0;
   }
 }
 
 .hit__button {
-  padding: 16px 70px;
+  padding: 15px 70px;
 
   @media (min-width: @tablet-width) {
     width: 292px;

@@ -16,9 +16,10 @@
     display: flex;
     flex-flow: row wrap;
 
-    background: url("../img/index/review-background-tablet.png") no-repeat 0% 41px;
+    background: url("../img/index/review-background-tablet.png") no-repeat;
+    background-size: 350px 457px;
 
-    padding: 41px 50px 85px;
+    padding: 0 50px 131px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/index/review-background-tablet@2x.png");
@@ -76,7 +77,7 @@
 
   color: @black;
 
-  margin: 0 0 14px 0;
+  margin: 3px 0 14px 0;
 
   @media (min-width: @tablet-width) {
     font-size: 43px;
@@ -84,14 +85,14 @@
 
     order: 1;
 
-    margin: 82.5px auto 38.5px 0;
+    margin: 90px auto 38.5px 0;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 53px;
     line-height: 57px;
 
-    margin: 78px auto 35px 174px;
+    margin: 77px auto 34px 174px;
   }
 }
 
@@ -118,7 +119,13 @@
 
     order: 3;
 
-    margin: 0 0 44px 174px;
+    margin: 0 0 40px 174px;
+  }
+}
+
+.reviews__text br {
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 
@@ -152,12 +159,16 @@
   @media (min-width: @tablet-width) {
     font-size: 18px;
   }
+
+  @media (min-width: @desktop-width) {
+    font-size: 17px;
+  }
 }
 
 .reviews__button-container {
   display: flex;
   flex-flow: row wrap;
-  margin-bottom: 38px;
+  margin-bottom: 40px;
 
   @media (min-width: @tablet-width) {
     width: 137px;
@@ -167,7 +178,11 @@
 
     order: 5;
 
-    margin: 0;
+    margin: 12px 17px 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 15px 17px 0 0;
   }
 }
 
@@ -190,27 +205,18 @@
   }
 }
 
-.reviews__button:focus {
-  outline: none;
+.reviews__arrow-left,
+.reviews__arrow-right {
+  margin-top: 5px;
 }
 
-.reviews__button:focus .reviews__arrow-left,
-.reviews__button:focus .reviews__arrow-right {
-  outline: none;
-  box-shadow: 0 0 0 3px @coral;
-  border: 1px solid @coral;
-  border-radius: 5px;
-
-  padding: 5px;
-}
-
-.reviews__arrow-left:hover path,
-.reviews__arrow-right:hover path {
+.reviews__arrow-left:hover,
+.reviews__arrow-right:hover {
   fill: fade(@black, 60%);
 }
 
-.reviews__arrow-left:active path,
-.reviews__arrow-right:active path {
+.reviews__arrow-left:active,
+.reviews__arrow-right:active {
   fill: fade(@black, 30%);
 }
 
@@ -218,6 +224,9 @@
   padding: 0;
 
   @media (min-width: @tablet-width) {
+    width: 175px;
+    height: 52px;
+
     font-size: 17px;
 
     order: 2;
