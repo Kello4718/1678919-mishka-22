@@ -7,10 +7,10 @@
   position: relative;
 
   @media (min-width: @tablet-width) {
-    width: 178px;
+    width: 181px;
     height: 34px;
 
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 }
 
@@ -38,15 +38,29 @@
 
   color: @black;
 
-  margin-right: auto;
+  margin-right: 27px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 21px 0;
+  }
+}
+
+.footer-copyright__link {
+  margin-top: 7px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 0 16px;
+  }
 }
 
 .footer-copyright__image {
   width: 27px;
   height: 34px;
+
+  fill: @coral;
 }
 
-.footer-copyright__image:hover path {
+.footer-copyright__image:hover {
   fill: @verylightcoral;
 }
 

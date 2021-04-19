@@ -1,9 +1,35 @@
+.reviews-form__button {
+  width: 175px;
+  height: 52px;
+}
+
 .reviews-form input[type="submit"] {
+  width: 260px;
+  height: 52px;
+
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
+  text-transform: uppercase;
 
   color: @grey;
+  background-color: @white;
 
-  padding: 16px 65px 16px 66px;
+  border: 2px solid @grey;
+
+  cursor: pointer;
+
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 175px;
+
+    margin-top: 7px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 175px;
+
+    margin: -1px 0 0 0;
+  }
 }

@@ -19,7 +19,7 @@
     justify-content: space-between;
     align-items: center;
 
-    padding: 51px 50px 58px;
+    padding: 27px 50px 58px;
   }
 
   @media (min-width: @desktop-width) {
@@ -27,7 +27,7 @@
   }
 }
 
-.footer__logo {
+.footer__logo-image {
   display: none;
 
   @media (min-width: @tablet-width) {
@@ -38,11 +38,11 @@
   }
 }
 
-.footer__logo:hover path {
+.footer__logo-link:hover .footer__logo-image {
   fill: @verylightcoral;
 }
 
-.footer__logo:active path {
+.footer__logo-link:active .footer__logo-image {
   fill: fade(@verylightcoral, 30%);
 }
 
