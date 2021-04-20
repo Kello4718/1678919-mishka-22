@@ -4,7 +4,7 @@
   display: flex;
   flex-flow: row wrap;
 
-  padding: 21px 30px 20px;
+  padding: 15px 30px 20px;
   margin: 0 auto;
   box-sizing: border-box;
 
@@ -15,7 +15,7 @@
     grid-template-columns: repeat(4, 167px);
     grid-template-areas: "title item item item";
 
-    padding: 65px 50px 50px;
+    padding: 5px 50px 50px;
   }
 
   @media (min-width: @desktop-width) {
@@ -28,6 +28,8 @@
 }
 
 .form-email__title {
+  font-size: 17px;
+
   color: @coral;
 
   position: relative;
@@ -40,7 +42,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: auto;
+    margin: 17px 0 0 61px;
   }
 }
 
@@ -86,13 +88,14 @@
   height: 21px;
 
   position: absolute;
-  top: 11px;
-  right: 7px;
+  top: 21px;
+  right: 3px;
 
   background-image: url("../img/form/mail.svg");
 
   @media (min-width: @tablet-width) {
-    right: 26px;
+    top: 15px;
+    right: 22px;
   }
 
   @media (min-width: @desktop-width) {
@@ -103,6 +106,7 @@
 .form-email__input-email {
   width: 260px;
 
+  font-family: inherit;
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
@@ -113,13 +117,14 @@
 
   background-color: transparent;
 
-  padding: 16px 76px 18px 0;
-  margin-bottom: 34.5px;
+  padding: 21px 76px 16px 0;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     width: 501px;
     height: 52px;
+
+    font-size: 19px;
 
     padding: 15px 278px 19px 18px;
     margin: 0;

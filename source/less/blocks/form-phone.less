@@ -4,7 +4,7 @@
   display: flex;
   flex-flow: row wrap;
 
-  padding: 16.5px 30px 20px;
+  padding: 13px 30px 20px;
   margin: 0 auto;
   box-sizing: border-box;
 
@@ -15,7 +15,7 @@
     grid-template-columns: repeat(4, 167px);
     grid-template-areas: "title item item item";
 
-    padding: 65px 50px 20px;
+    padding: 55px 50px 20px;
   }
 
   @media (min-width: @desktop-width) {
@@ -28,6 +28,8 @@
 }
 
 .form-phone__title {
+  font-size: 17px;
+
   color: @coral;
 
   position: relative;
@@ -38,11 +40,11 @@
   @media (min-width: @tablet-width) {
     grid-area: title;
 
-    margin: auto 0;
+    margin: 15px 0 0 0;
   }
 
   @media (min-width: @desktop-width) {
-    margin: auto;
+    margin: 17px 0 0 61px;
   }
 }
 
@@ -119,6 +121,7 @@
 .form-phone__input-tel {
   width: 260px;
 
+  font-family: inherit;
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
@@ -131,13 +134,14 @@
 
   background-color: transparent;
 
-  padding: 14px 10px 20px 0;
-  margin-bottom: 34.5px;
+  padding: 14px 10px 17px 0;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     width: 501px;
     height: 52px;
+
+    font-size: 19px;
 
     padding: 14px 220px 20px 17px;
     margin: 0;
