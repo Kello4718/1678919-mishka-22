@@ -9,7 +9,7 @@
   @media (min-width: @tablet-width) {
     width: 668px;
 
-    margin-bottom: 30px;
+    margin-bottom: 54px;
   }
 
   @media (min-width: @desktop-width) {
@@ -29,6 +29,10 @@
     margin: 0;
   }
 }
+
+/*.catalog-item:last-child .catalog-item__content-container {
+  padding: 22px 26px 26.5px 28px;
+}*/
 
 .catalog-item__link-image {
   height: 195px;
@@ -70,7 +74,6 @@
 
 .catalog-item__content-container {
   width: 260px;
-  min-height: 210px;
 
   display: flex;
   flex-flow: row wrap;
@@ -78,14 +81,13 @@
 
   border: 1px solid @lightwhite;
 
-  padding: 27.5px 32px 26.5px 28px;
+  padding: 27.5px 26px 26.5px 28px;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     width: 334px;
-    min-height: 334px;
 
-    padding: 27px 32px 25.5px 34px;
+    padding: 27px 32px 25.5px 32px;
   }
 
   @media (min-width: @desktop-width) {
@@ -95,7 +97,7 @@
     grid-row: 2 / 3;
     flex-flow: column wrap;
 
-    padding: 27px 30px 25.5px 28px;
+    padding: 27px 28px 25.5px 27px;
   }
 }
 
@@ -105,6 +107,16 @@
 
 .catalog-item__content-container:active {
   box-shadow: 0 3px 5px fade(@black, 10%);
+}
+
+.catalog-item:last-child .catalog-item__content-container {
+  @media (min-width: @tablet-width) {
+    padding: 24px 28px 25.5px 27px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 24px 28px 25.5px 27px;
+  }
 }
 
 .catalog-item__content-description {
@@ -122,7 +134,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 262px;
+    width: 257px;
 
     margin-bottom: 36.5px;
   }
@@ -148,6 +160,16 @@
   color: fade(@black, 30%);
 }
 
+.catalog-item:last-child .catalog-item__link-title {
+  @media (min-width: @tablet-width) {
+    margin: 3px 0 0 4px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 3px 0 0 0;
+  }
+}
+
 .catalog-item__title {
   font-size: 17px;
   line-height: 24px;
@@ -163,8 +185,6 @@
 }
 
 .catalog-item__text {
-  height: max-content;
-
   font-size: 13px;
   line-height: 30px;
   font-weight: 400;
@@ -177,5 +197,11 @@
 
   @media (min-width: @tablet-width) {
     font-size: 15px;
+  }
+}
+
+.catalog-item:last-child .catalog-item__text {
+  @media (min-width: @tablet-width) {
+    margin: 6px 0 0 0;
   }
 }

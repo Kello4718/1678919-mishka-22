@@ -14,11 +14,15 @@
 
   @media (min-width: @tablet-width) {
     width: 266px;
-    height: max-content;
+
+    padding: 26px 0 0 0;
+    margin-top: auto;
   }
 
   @media (min-width: @desktop-width) {
-    width: 262px;
+    width: 257px;
+
+    margin: 0;
   }
 }
 
@@ -33,6 +37,14 @@
   height: 1px;
 
   background-color: @lightwhite;
+
+  @media (min-width: @tablet-width) {
+    width: 268px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 256px;
+  }
 }
 
 .catalog-buy-container__price {
@@ -41,6 +53,10 @@
   font-weight: 700;
 
   color: @black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+  }
 }
 
 .catalog-buy-container__button {
@@ -50,13 +66,13 @@
   border: none;
 
   padding: 0;
-  margin: 0;
+  margin: 0 0 4px 0;
 }
 
-.catalog-buy-container__cart:hover path {
+.catalog-buy-container__cart:hover {
   fill: @coral;
 }
 
-.catalog-buy-container__cart:active path {
+.catalog-buy-container__cart:active {
   fill: fade(@coral, 30%);
 }
