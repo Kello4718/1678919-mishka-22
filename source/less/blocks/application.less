@@ -99,6 +99,32 @@
   }
 }
 
+.application__text .application__text-mobile-br {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.application__text .application__text-tablet-br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.application__text .application__text-desktop-br {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
 .application__form {
   font-size: 17px;
   line-height: 18px;

@@ -15,7 +15,7 @@
     grid-template-columns: repeat(4, 167px);
     grid-template-areas: "title list list list";
 
-    padding: 50px 50px 66.85px;
+    padding: 51px 50px 44px;
   }
 
   @media (min-width: @desktop-width) {
@@ -25,21 +25,23 @@
     grid-template-columns: repeat(6, 175px);
     grid-template-areas: "title list list list list list";
 
-    padding: 39.5px 50px 66.85px;
+    padding: 39.5px 50px 43px;
   }
 }
 
 .form-type__title {
+  font-size: 17px;
+
   color: @coral;
 
   position: relative;
 
   padding: 0;
-  margin: 0 0 35px 0;
+  margin: 0 0 32px 0;
 
   @media (min-width: @tablet-width) {
     font-size: 17px;
-    line-height: 16px;
+    line-height: 18px;
 
     grid-area: title;
 
@@ -48,6 +50,8 @@
 
   @media (min-width: @desktop-width) {
     text-align: center;
+
+    margin: 3px 15px 0 0;
   }
 }
 
@@ -73,6 +77,12 @@
 
   @media (min-width: @tablet-width) {
     grid-area: list;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  @media (min-width: @tablet-width) {
+    flex-flow: column wrap;
   }
 }
 
@@ -87,18 +97,18 @@
   display: flex;
   align-items: center;
 
-  margin-bottom: 24px;
+  margin-bottom: 7px;
 
   @media (min-width: @tablet-width) {
     min-width: 300px;
 
-    margin-bottom: 58px;
+    align-items: flex-start;
+
+    margin-bottom: 33px;
   }
 
   @media (min-width: @desktop-width) {
     min-width: 320px;
-
-    margin-bottom: 58px;
   }
 }
 
@@ -157,8 +167,8 @@
   content: "";
 
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -11px;
+  left: -1px;
 
   width: 42px;
   height: 42px;
@@ -180,8 +190,8 @@
 .form-type__input-accessories:checked + .form-type__accessories-and-toys::before,
 .form-type__input-baby-toys:checked + .form-type__accessories-and-toys::before {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -6px;
+  left: -1px;
 
   width: 42px;
   height: 42px;
