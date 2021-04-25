@@ -41,6 +41,8 @@ const html = () => {
     .pipe(gulp.dest("build"));
 }
 
+exports.html = html;
+
 // Images
 
 const images = () => {
@@ -55,6 +57,13 @@ const images = () => {
 
 exports.images = images;
 
+const copyimages = () => {
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
+    .pipe(gulp.dest("build/image"));
+}
+
+exports.copyimages = copyimages;
+
 // WebP
 
 const createWebp = () => {
@@ -64,14 +73,6 @@ const createWebp = () => {
 }
 
 exports.createWebp = createWebp;
-
-const createWebpDev = () => {
-  return gulp.src("source/img/**/*.{png,jpg}")
-    .pipe(webp({ quality: 90 }))
-    .pipe(gulp.dest("source/img"));
-}
-
-exports.createWebpDev = createWebpDev;
 
 // Sprite
 
@@ -99,20 +100,6 @@ const copy = (done) => {
 }
 
 exports.copy = copy;
-
-const copyDev = (done) => {
-  gulp.src([
-    "source/fonts/*.{woff2,woff}",
-    "source/*.ico",
-    "source/img/**/*.{jpg,png,svg}",
-  ], {
-    base: "source"
-  })
-    .pipe(gulp.dest("source"))
-  done();
-}
-
-exports.copyDev = copyDev;
 
 // Clean
 
@@ -154,12 +141,12 @@ const watcher = () => {
 
 const build = gulp.series(
   clean,
+  copy,
+  images,
   gulp.parallel(
     styles,
     html,
     sprite,
-    copy,
-    images,
     createWebp
   )
 );
@@ -170,12 +157,13 @@ exports.build = build;
 
 exports.default = gulp.series(
   clean,
+  copy,
+  copyimages,
   gulp.parallel(
     styles,
     html,
     sprite,
-    copy,
-    createWebpDev
+    createWebp
   ),
   gulp.series(
     server,
