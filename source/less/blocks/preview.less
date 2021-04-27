@@ -128,7 +128,6 @@
   text-decoration: none;
 
   color: @white;
-  background-color: @coral;
 
   position: relative;
 
@@ -140,8 +139,6 @@
 
     font-size: 20px;
     line-height: 30px;
-
-    padding: 1px 0 0 5px;
   }
 
   @media (min-width: @desktop-width) {
@@ -151,13 +148,13 @@
   }
 }
 
-.preview__item:hover,
-.preview__item:active {
+.preview__link:hover,
+.preview__link:active {
   @media (min-width: @tablet-width) {
     height: 124px;
 
-    transform: translateY(-3px);
-    transition: all 0.5s ease;
+    transform: translateY(-5px);
+    transition: all 0.2s ease;
   }
 }
 
@@ -199,6 +196,8 @@
 
 .preview__link-interior {
   position: relative;
+
+  background-color: @coral;
 }
 
 .preview__link-interior::before {
