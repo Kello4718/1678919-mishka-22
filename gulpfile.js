@@ -52,14 +52,14 @@ const images = () => {
       imagemin.optipng({ optimizationLevel: 3 }),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest("build/image"));
+    .pipe(gulp.dest("build/img"));
 }
 
 exports.images = images;
 
 const copyimages = () => {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
-    .pipe(gulp.dest("build/image"));
+    .pipe(gulp.dest("build/img"));
 }
 
 exports.copyimages = copyimages;
